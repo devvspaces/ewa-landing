@@ -254,10 +254,8 @@ export default function Home() {
                 If you have any questions about this Privacy Policy or the Information we have collected about you, please contact us at the following:
               </p>
               <ul className="list-none space-y-2 mb-8">
-                <li><strong>Email us:</strong> Ewatheapp.com@ewatheapp.com</li>
-                <li><strong>Call us:</strong> 862-303-3336</li>
+                <li><strong>Email us:</strong> admin@ewatheapp.com</li>
               </ul>
-              
               <p className="text-gray-700 leading-relaxed font-medium">
                 <strong>Effective Date:</strong> June 1, 2024
               </p>

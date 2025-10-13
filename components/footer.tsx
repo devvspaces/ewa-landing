@@ -59,14 +59,8 @@ export function Footer() {
 
           {/* Newsletter start from the 4th grid col */}
           <div className="lg:col-start-4 lg:col-span-10">
-            <h3 className="font-semibold text-black text-[#616161] text-[12px] mb-2">Sign up to our Waitlist</h3>
-            <div className="flex flex-col md:flex-row gap-4 items-center">
-              <Input
-                type="email"
-                placeholder="Your email address"
-                className="placeholder:text-gray-400 border-y-1 border-x-0 rounded-none text-[#142640] focus:ring-0 focus:border-[#142640] border-gray-300"
-              />
-              <Button className="rounded-full bg-[#142640] hover:bg-[#142640] px-6 py-6">Get Started</Button>
+            <div className="flex flex-col md:flex-row gap-4 items-center justify-end">
+              <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdwiHqpqI8NGTXO4jhFjqLqAFNNXRHwhIedNDrT6k5jJ0Tdxw/viewform"><Button className="rounded-full bg-[#142640] hover:bg-[#142640] px-6 py-6">Sign up to our Waitlist</Button></Link>
             </div>
           </div>
         </div>
