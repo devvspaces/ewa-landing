@@ -14,12 +14,13 @@ export function Footer() {
           <div className="flex gap-4 items-center">
             <p className="text-[#142640] text-[12px]">Follow us</p>
             <Link
-              href="#"
+              href="https://www.instagram.com/ewaatheapp"
               className="text-[#142640]"
+              target="_blank"
             >
               <PiInstagramLogoFill className="w-5 h-5" />
             </Link>
-            <Link
+            {/* <Link
               href="#"
               className="text-[#142640]"
             >
@@ -30,7 +31,7 @@ export function Footer() {
               className="text-[#142640]"
             >
               <PiLinkedinLogoFill className="w-5 h-5" />
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="text-center md:text-left grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
@@ -44,7 +45,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#000] text-[12px]">
+                <Link href="https://www.instagram.com/ewaatheapp" target="_blank" className="text-[#000] text-[12px]">
                   Contact
                 </Link>
               </li>
