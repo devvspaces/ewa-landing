@@ -54,13 +54,13 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left lg:col-span-2 relative">
-            <div className="absolute right-[0] top-[0px] md:left-[50%] md:top-[-120px]">
+            <div className="absolute right-[0] top-[50px] md:left-[50%] md:top-[-120px]">
               <El1 />
             </div>
             <div className="absolute left-[0px] bottom-[-30px] md:left-[-40px] md:bottom-[80px]">
               <El2 />
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+            <h1 className="text-2xl text-center sm:text-4xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
               Barbing <span className="text-[#6C5CE7]">.Anytime.</span> Anywhere
             </h1>
             <p className="text-gray-600 text-center sm:text-lg max-w-xl mx-auto mb-8">
