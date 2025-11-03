@@ -40,7 +40,7 @@ export function Footer() {
           </li>
           <li>
             <Link
-              href="https://www.instagram.com/ewaatheapp"
+              href="mailto:Ewaapp@ewatheapp.com"
               target="_blank"
               className="text-[#000] text-[12px]"
             >
