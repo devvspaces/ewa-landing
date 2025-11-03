@@ -58,7 +58,7 @@ export function EwaAppSection() {
                 <IU2 />
               </div>
               <Image
-                src="/images/ewa.png"
+                src="/images/ewa-b1.png"
                 alt="EWA Biz App"
                 width={350}
                 height={700}

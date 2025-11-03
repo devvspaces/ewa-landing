@@ -1,16 +1,69 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { PiInstagramLogoFill, PiTwitterLogoFill, PiLinkedinLogoFill } from "react-icons/pi"
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  PiInstagramLogoFill,
+  PiTwitterLogoFill,
+  PiLinkedinLogoFill,
+} from "react-icons/pi";
 
 export function Footer() {
   return (
-    <footer className="bg-[#fff] text-white py-12 md:py-16">
+    <footer className="bg-[#fff] text-white py-6 text-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Logo and Social */}
-        <div className="mb-8 w-fit mx-auto md:mx-0">
-          <img src="/images/footer-logo.svg" alt="EWA" width={"150px"} className="mb-6" />
+        <div className="mb-5 w-fit mx-auto">
+          <img
+            src="/images/footer-logo.svg"
+            alt="EWA"
+            width={"150px"}
+            className="mb-6"
+          />
+        </div>
+        <div className="mb-5">
+          <Link
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdwiHqpqI8NGTXO4jhFjqLqAFNNXRHwhIedNDrT6k5jJ0Tdxw/viewform"
+          >
+            <Button className="rounded-full bg-[#142640] hover:bg-[#142640] px-14 py-6">
+              Join Waitlist
+            </Button>
+          </Link>
+        </div>
+        <ul className="mb-5 flex gap-20 justify-center font-medium">
+          <li>
+            <Link href="#" className="text-[#000] text-[12px]">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.instagram.com/ewaatheapp"
+              target="_blank"
+              className="text-[#000] text-[12px]"
+            >
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link href="#faq" className="text-[#000] text-[12px]">
+              FAQ
+            </Link>
+          </li>
+          <li>
+            <Link href="/terms" className="text-[#000] text-[12px]">
+              Terms of Use
+            </Link>
+          </li>
+          <li>
+            <Link href="/privacy" className="text-[#000] text-[12px]">
+              Privacy Policy
+            </Link>
+          </li>
+        </ul>
+        <div className="flex justify-center mb-5">
           <div className="flex gap-4 items-center">
             <p className="text-[#142640] text-[12px]">Follow us</p>
             <Link
@@ -20,66 +73,44 @@ export function Footer() {
             >
               <PiInstagramLogoFill className="w-5 h-5" />
             </Link>
-            {/* <Link
-              href="#"
-              className="text-[#142640]"
-            >
-              <PiTwitterLogoFill className="w-5 h-5" />
-            </Link>
-            <Link
-              href="#"
-              className="text-[#142640]"
-            >
-              <PiLinkedinLogoFill className="w-5 h-5" />
-            </Link> */}
-          </div>
-        </div>
-        <div className="text-center md:text-left grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          {/* Company */}
-          <div>
-            <h3 className="text-[12px] text-[#616161] mb-1 uppercase">Company</h3>
-            <ul className="space-y-1">
-              <li>
-                <Link href="#" className="text-[#000] text-[12px]">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="https://www.instagram.com/ewaatheapp" target="_blank" className="text-[#000] text-[12px]">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link href="#faq" className="text-[#000] text-[12px]">
-                  FAQ
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Newsletter start from the 4th grid col */}
-          <div className="lg:col-start-4 lg:col-span-10">
-            <div className="flex flex-col md:flex-row gap-4 items-center justify-end">
-              <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdwiHqpqI8NGTXO4jhFjqLqAFNNXRHwhIedNDrT6k5jJ0Tdxw/viewform"><Button className="rounded-full bg-[#142640] hover:bg-[#142640] px-6 py-6">Sign up to our Waitlist</Button></Link>
-            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t-1">
+        <div className="pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex gap-6">
-              <Link href="/privacy" className="text-[#616161] text-sm text-[12px] hover:underline">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-[#616161] text-sm text-[12px] hover:underline">
-                Terms of Use
-              </Link>
+            <p className="text-[#616161] text-sm text-[12px]">
+              © Copyright 2025 EWÀ. All Rights Reserved.
+            </p>
+            <div className="cursor-pointer scale-75" onClick={() => {
+              // Scroll up
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="15.5"
+                  transform="rotate(-90 16 16)"
+                  stroke="black"
+                />
+                <path
+                  d="M8.4707 19.7646L16.0001 13.1764L23.5295 19.7646"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
-            <p className="text-[#616161] text-sm text-[12px]">© Copyright 2025 EWÀ. All Rights Reserved.</p>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -57,13 +57,8 @@ export function AppFeatures() {
     },
     {
       icon: "/images/home-service.svg",
-      title: "Home Service",
-      description: "Ewa delivers salon quality services to your door step. Book you next haircut at EWA",
-    },
-    {
-      icon: "/images/easy-payment.svg",
-      title: "Easy Payment",
-      description: "EWA has an integrated payment system that enable seamless transaction  and payouts.",
+      title: "Verified Customers",
+      description: "We ensure all customers are verified and secured with our inclusive KYC",
     },
   ]
 
