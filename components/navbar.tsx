@@ -38,6 +38,9 @@ export function Navbar() {
             <Link href="/" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
               Home
             </Link>
+            <Link href="/support" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
+              Support
+            </Link>
             <Link href="/terms" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
               Terms of Use
             </Link>
@@ -86,6 +89,9 @@ export function Navbar() {
             <div className="flex flex-col gap-4">
               <Link href="/" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
                 Home
+              </Link>
+              <Link href="/support" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
+                Support
               </Link>
               <Link href="/terms" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
                 Terms of Use
