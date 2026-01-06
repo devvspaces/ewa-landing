@@ -47,7 +47,7 @@ export function Testimonials() {
   ]
 
   return (
-    <section className="bg-[#131826] py-[40px] md:py-[140px]">
+    <section className="bg-[#131826] py-[40px] md:py-[140px hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center mb-12 text-[#E3E3E3]">What our users say</h2>
 
