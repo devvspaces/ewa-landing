@@ -25,7 +25,7 @@ export function Footer() {
         <div className="mb-5">
           <Link
             target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdwiHqpqI8NGTXO4jhFjqLqAFNNXRHwhIedNDrT6k5jJ0Tdxw/viewform"
+            href="https://forms.gle/oh6m9Y2LjTGAVnu49"
           >
             <Button className="rounded-full bg-[#142640] hover:bg-[#142640] px-14 py-6">
               Join Waitlist
