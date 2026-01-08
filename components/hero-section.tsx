@@ -111,7 +111,7 @@ export function HeroSection() {
               <Link href="https://forms.gle/oh6m9Y2LjTGAVnu49" target="_blank">
                 <Button
                   size={"lg"}
-                  className="rounded-full bg-gradient-to-r from-[#6C5CE7] to-[#A29BFE] text-white hover:shadow-2xl hover:scale-105 transition-all duration-300 text-xl animate-pulse"
+                  className="rounded-full bg-gradient-to-r from-[#342b74] to-[#443bc0] text-white hover:shadow-2xl hover:scale-200 transition-all duration-300 text-xl"
                   style={{
                     padding: "30px 50px",
                     cursor: "pointer",
