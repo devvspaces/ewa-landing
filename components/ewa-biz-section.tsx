@@ -1,9 +1,13 @@
+'use client'
+
 import Image from "next/image";
+import { useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { FaAndroid, FaApple, FaAward, FaDownload, FaHourglass, FaPlane } from "react-icons/fa";
 import { LuDownload } from "react-icons/lu";
 import { Button } from "./ui/button";
-import Link from "next/link";
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { JoinWaitlistForm } from "@/components/join-waitlist-form";
 
 function IU1() {
   return (
@@ -91,6 +95,8 @@ function IU2() {
 }
 
 export function EwaBizSection() {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="py-16 md:py-24 relative overflow-hidden" id="ewa-biz">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -147,13 +153,10 @@ export function EwaBizSection() {
             </div>
 
             <div className="space-y-3 mb-6">
-              <Link href="https://forms.gle/oh6m9Y2LjTGAVnu49" target="_blank">
+              <Sheet open={open} onOpenChange={setOpen}>
                 <Button
-                  className="rounded-lg bg-[#F5F5F5] text-[#142640] py-6 text-base w-full hover:bg-[#E0E0E0] justify-start cursor-pointer"
-                  style={{
-                    paddingLeft: "24px",
-                    paddingRight: "24px",
-                  }}
+                  className="w-full justify-start rounded-lg bg-[#F5F5F5] px-6 py-6 text-base text-[#142640] transition-all hover:bg-[#E5E5E5] hover:shadow-md"
+                  onClick={() => setOpen(true)}
                 >
                   <FaAward
                     style={{
@@ -163,12 +166,30 @@ export function EwaBizSection() {
                   />
                   Join wait list
                 </Button>
-              </Link>
+                <SheetContent
+                  side="bottom"
+                  className="h-[90vh] overflow-y-auto rounded-t-3xl border-t bg-gradient-to-b from-white to-gray-50 shadow-2xl"
+                >
+                  <div className="mx-auto max-w-2xl px-4 py-6 sm:px-6 md:px-8">
+                    <SheetHeader className="mb-6 text-center">
+                      <SheetTitle className="text-2xl font-bold text-[#142640] md:text-3xl">
+                        Join the EWÀ Biz Waitlist
+                      </SheetTitle>
+                      <p className="mt-2 text-sm text-gray-600">
+                        Tell us a bit about your work so we can onboard you smoothly when we launch.
+                      </p>
+                    </SheetHeader>
+                    <div className="mt-6">
+                      <JoinWaitlistForm onSuccess={() => setOpen(false)} />
+                    </div>
+                  </div>
+                </SheetContent>
+              </Sheet>
               {/* <Button className="rounded-lg bg-[#F5F5F5] text-[#142640] py-6 text-base w-full hover:bg-[#E0E0E0] justify-start" style={{
                 paddingLeft: '24px',
                 paddingRight: '24px',
               }}>
-                <FaApple style={{
+                <FaApple style({
                   height: '20px',
                   width: '20px',
                 }} />
@@ -178,7 +199,7 @@ export function EwaBizSection() {
                 paddingLeft: '24px',
                 paddingRight: '24px',
               }}>
-                <FaAndroid style={{
+                <FaAndroid style({
                   height: '20px',
                   width: '20px',
                 }} />

@@ -1,8 +1,12 @@
+'use client'
+
 import Image from "next/image";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { AppleIcon, Apple } from "lucide-react";
 import { FaApple, FaAndroid, FaAward } from "react-icons/fa";
-import Link from "next/link";
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { JoinWaitlistForm } from "@/components/join-waitlist-form";
 
 function El1() {
   return (
@@ -87,6 +91,8 @@ function ImageEllipse() {
 }
 
 export function HeroSection() {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="relative pt-24 md:pt-42 pb-0 md:pb-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -108,26 +114,43 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col md:flex-row gap-4 justify-center">
-              <Link href="https://forms.gle/oh6m9Y2LjTGAVnu49" target="_blank">
+              <Sheet open={open} onOpenChange={setOpen}>
                 <Button
                   size={"lg"}
-                  className="rounded-full bg-gradient-to-r from-[#342b74] to-[#443bc0] text-white hover:shadow-2xl hover:scale-200 transition-all duration-300 text-xl"
+                  className="rounded-full bg-gradient-to-r from-[#342b74] to-[#443bc0] text-white transition-all duration-300 hover:brightness-110 hover:shadow-xl text-lg"
                   style={{
-                    padding: "30px 50px",
-                    cursor: "pointer",
+                    padding: "28px 48px",
                     boxShadow: "0 10px 40px rgba(108, 92, 231, 0.4)",
                   }}
+                  onClick={() => setOpen(true)}
                 >
                   <FaAward
                     style={{
                       height: "20px",
                       width: "20px",
                     }}
-                    className="animate-bounce"
                   />
                   Join Wait List
                 </Button>
-              </Link>
+                <SheetContent
+                  side="bottom"
+                  className="h-[90vh] overflow-y-auto rounded-t-3xl border-t bg-gradient-to-b from-white to-gray-50 shadow-2xl w-full md:max-w-xl mx-auto"
+                >
+                  <div className="mx-auto max-w-2xl px-4 py-6 sm:px-6 md:px-8">
+                    <SheetHeader className="mb-6 text-center">
+                      <SheetTitle className="text-2xl font-bold text-[#142640] md:text-3xl">
+                        Join the EWÀ Biz Waitlist
+                      </SheetTitle>
+                      <p className="mt-2 text-sm text-gray-600">
+                        Share a few details so we can invite you as soon as we launch in your area.
+                      </p>
+                    </SheetHeader>
+                    <div className="mt-6">
+                      <JoinWaitlistForm onSuccess={() => setOpen(false)} />
+                    </div>
+                  </div>
+                </SheetContent>
+              </Sheet>
               {/* <Button
                 size={'lg'}
                 variant="outline"

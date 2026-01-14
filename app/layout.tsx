@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
 
+import { Toaster } from "@/components/ui/toaster"
 import { Inter, Geist_Mono as V0_Font_Geist_Mono } from 'next/font/google'
 
 // Initialize fonts
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Suspense fallback={<div>Loading...</div>}>
           {children}
           <Analytics />
+          <Toaster />
         </Suspense>
       </body>
     </html>
