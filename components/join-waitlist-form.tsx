@@ -59,8 +59,6 @@ export function JoinWaitlistForm({ onSuccess }: JoinWaitlistFormProps) {
       city: '',
       profession: '',
       yearsOfExperience: '',
-      offersHomeService: 'yes',
-      preferredContact: 'email',
     },
   })
 
@@ -161,7 +159,7 @@ export function JoinWaitlistForm({ onSuccess }: JoinWaitlistFormProps) {
                 </FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="+234 801 234 5678"
+                    placeholder="+1 (XXX) XXX-XXXX"
                     className="h-11 rounded-lg border-gray-300 focus:border-[#6C5CE7] focus:ring-[#6C5CE7]"
                     {...field}
                   />
@@ -204,7 +202,7 @@ export function JoinWaitlistForm({ onSuccess }: JoinWaitlistFormProps) {
                 </FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Lekki, Lagos"
+                    placeholder="San Francisco"
                     className="h-11 rounded-lg border-gray-300 focus:border-[#6C5CE7] focus:ring-[#6C5CE7]"
                     {...field}
                   />
