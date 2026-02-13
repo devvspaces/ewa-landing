@@ -16,7 +16,7 @@ export function Footer() {
         {/* Logo and Social */}
         <div className="mb-5 w-fit mx-auto">
           <img
-            src="/images/footer-logo.svg"
+            src="/logo.svg"
             alt="EWA"
             width={"150px"}
             className="mb-6"
@@ -27,7 +27,7 @@ export function Footer() {
             target="_blank"
             href="https://docs.google.com/forms/d/e/1FAIpQLSdwiHqpqI8NGTXO4jhFjqLqAFNNXRHwhIedNDrT6k5jJ0Tdxw/viewform"
           >
-            <Button className="rounded-full bg-[#142640] hover:bg-[#142640] px-14 py-6">
+            <Button className="rounded-full bg-[#061C27] hover:bg-[#061C27] px-14 py-6">
               Join Wait list
             </Button>
           </Link>
