@@ -27,8 +27,8 @@ function El1() {
           y2="32"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#BCC7FA" />
-          <stop offset="1" stopColor="#B0A0F0" />
+          <stop stopColor="#FF823F" />
+          <stop offset="1" stopColor="#FBBD1E" />
         </linearGradient>
       </defs>
     </svg>
@@ -54,8 +54,8 @@ function El2() {
           y2="20.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#EEC7EE" />
-          <stop offset="1" stopColor="#F9BED0" />
+          <stop stopColor="#FBBD1E" />
+          <stop offset="1" stopColor="#FF823F" />
         </linearGradient>
       </defs>
     </svg>
@@ -81,9 +81,9 @@ function ImageEllipse() {
           y2="45"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#DD31FF" />
-          <stop offset="0.5" stopColor="#7D28EB" />
-          <stop offset="1" stopColor="#622DFD" />
+          <stop stopColor="#FF823F" />
+          <stop offset="0.5" stopColor="#FF823F" />
+          <stop offset="1" stopColor="#FBBD1E" />
         </linearGradient>
       </defs>
     </svg>
@@ -106,7 +106,7 @@ export function HeroSection() {
               <El2 />
             </div>
             <h1 className="text-2xl text-center sm:text-4xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-              Barbing <span className="text-[#6C5CE7]">.Anytime.</span> Anywhere
+              Barbing <span className="text-[#FF823F]">.Anytime.</span> Anywhere
             </h1>
             <p className="text-gray-600 text-center sm:text-lg max-w-xl mx-auto mb-8">
               Beauty made convenient with EWÀ
@@ -117,10 +117,10 @@ export function HeroSection() {
               <Sheet open={open} onOpenChange={setOpen}>
                 <Button
                   size={"lg"}
-                  className="rounded-full bg-gradient-to-r from-[#342b74] to-[#443bc0] text-white transition-all duration-300 hover:brightness-110 hover:shadow-xl text-lg"
+                  className="rounded-full bg-gradient-to-r from-[#061C27] to-[#FF823F] text-white transition-all duration-300 hover:brightness-110 hover:shadow-xl text-lg"
                   style={{
                     padding: "28px 48px",
-                    boxShadow: "0 10px 40px rgba(108, 92, 231, 0.4)",
+                    boxShadow: "0 10px 40px rgba(6, 28, 39, 0.4)",
                   }}
                   onClick={() => setOpen(true)}
                 >

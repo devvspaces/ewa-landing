@@ -328,7 +328,7 @@ export function JoinWaitlistForm({ onSuccess }: JoinWaitlistFormProps) {
         <div className="pt-2">
           <Button
             type="submit"
-            className="h-12 w-full rounded-lg bg-gradient-to-r from-[#342b74] to-[#443bc0] text-base font-semibold text-white shadow-md transition-all hover:shadow-lg hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-60"
+            className="h-12 w-full rounded-lg bg-gradient-to-r from-[#061C27] to-[#FF823F] text-base font-semibold text-white shadow-md transition-all hover:shadow-lg hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-60"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
