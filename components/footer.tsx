@@ -80,7 +80,7 @@ export function Footer() {
         <div className="pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[#616161] text-sm text-[12px]">
-              © Copyright 2025 EWÀ. All Rights Reserved.
+              © Copyright {new Date().getFullYear()} EWÀ. All Rights Reserved.
             </p>
             <div className="cursor-pointer scale-75" onClick={() => {
               // Scroll up
