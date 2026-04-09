@@ -312,12 +312,6 @@ export function JoinWaitlistForm({ onSuccess }: JoinWaitlistFormProps) {
                     <RadioGroupItem value="email" className="sr-only" />
                     <span>Email</span>
                   </Label>
-                  <Label
-                    className="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm font-medium transition hover:border-[#6C5CE7] hover:bg-[#6C5CE7]/5 has-[:checked]:border-[#6C5CE7] has-[:checked]:bg-[#6C5CE7]/10 has-[:checked]:text-[#6C5CE7]"
-                  >
-                    <RadioGroupItem value="text" className="sr-only" />
-                    <span>Text message</span>
-                  </Label>
                 </RadioGroup>
               </FormControl>
               <FormMessage />
