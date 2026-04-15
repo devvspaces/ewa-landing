@@ -36,9 +36,6 @@ const joinWaitlistSchema = z.object({
   offersHomeService: z.enum(['yes', 'no'], {
     required_error: 'Please tell us if you offer home or house-call services',
   }),
-  preferredContact: z.enum(['email', 'text'], {
-    required_error: 'Please choose how you would like to receive updates',
-  }),
 })
 
 export type JoinWaitlistFormValues = z.infer<typeof joinWaitlistSchema>
@@ -75,8 +72,7 @@ export function JoinWaitlistForm({ onSuccess }: JoinWaitlistFormProps) {
         profession: values.profession,
         yearsOfExperience: Number(values.yearsOfExperience),
         homeService: values.offersHomeService === 'yes',
-        receiveUpdates:
-          values.preferredContact === 'email' ? 'EMAIL' : 'TEXT_MESSAGE',
+        receiveUpdates: 'EMAIL'
       }
 
       const res = await fetch(`${apiBaseUrl}/wait-list/submit`, {
@@ -106,7 +102,6 @@ export function JoinWaitlistForm({ onSuccess }: JoinWaitlistFormProps) {
         profession: '',
         yearsOfExperience: '',
         offersHomeService: 'yes',
-        preferredContact: 'email',
       })
 
       onSuccess?.()
@@ -291,33 +286,7 @@ export function JoinWaitlistForm({ onSuccess }: JoinWaitlistFormProps) {
           )}
         />
 
-        <FormField
-          control={form.control}
-          name="preferredContact"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className="text-sm font-medium text-gray-700">
-                How would you like to receive updates?
-                <span className="text-red-500"> *</span>
-              </FormLabel>
-              <FormControl>
-                <RadioGroup
-                  className="grid grid-cols-2 gap-3"
-                  onValueChange={field.onChange}
-                  value={field.value}
-                >
-                  <Label
-                    className="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm font-medium transition hover:border-[#6C5CE7] hover:bg-[#6C5CE7]/5 has-[:checked]:border-[#6C5CE7] has-[:checked]:bg-[#6C5CE7]/10 has-[:checked]:text-[#6C5CE7]"
-                  >
-                    <RadioGroupItem value="email" className="sr-only" />
-                    <span>Email</span>
-                  </Label>
-                </RadioGroup>
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+        <p className='text-sm'>Additional updates will be communicated via email *</p>
 
         <div className="pt-2">
           <Button
