@@ -44,8 +44,21 @@ interface JoinWaitlistFormProps {
   onSuccess?: () => void
 }
 
+interface AppConfig {
+  apiUrl: string
+  apiKey: string
+}
+
 export function JoinWaitlistForm({ onSuccess }: JoinWaitlistFormProps) {
   const { toast } = useToast()
+  const [config, setConfig] = React.useState<AppConfig | null>(null)
+
+  React.useEffect(() => {
+    fetch('/api/config')
+      .then((res) => res.json())
+      .then((data: AppConfig) => setConfig(data))
+      .catch(() => setConfig({ apiUrl: 'http://localhost:3000', apiKey: '' }))
+  }, [])
 
   const form = useForm<JoinWaitlistFormValues>({
     resolver: zodResolver(joinWaitlistSchema),
@@ -61,8 +74,7 @@ export function JoinWaitlistForm({ onSuccess }: JoinWaitlistFormProps) {
 
   const onSubmit = async (values: JoinWaitlistFormValues) => {
     try {
-      const apiBaseUrl =
-        process.env.NEXT_PUBLIC_EWA_API_URL || 'http://localhost:3000'
+      const apiBaseUrl = config?.apiUrl || 'http://localhost:3000'
 
       const payload = {
         fullName: values.fullName,
@@ -79,7 +91,7 @@ export function JoinWaitlistForm({ onSuccess }: JoinWaitlistFormProps) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'x-api-key': process.env.NEXT_PUBLIC_EWA_API_KEY || '',
+          'x-api-key': config?.apiKey || '',
         },
         body: JSON.stringify(payload),
       })
