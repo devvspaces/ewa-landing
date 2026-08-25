@@ -53,12 +53,12 @@ export function Footer() {
             </Link>
           </li>
           <li>
-            <Link href="https://docs.google.com/document/d/18u1MjiZCMEZpVYhGpPuTnyY1LkmXoTR7ihkaR_OKboc/edit?usp=sharing" className="text-[#000] text-[12px]">
+            <Link href="/terms" className="text-[#000] text-[12px]">
               Terms of Use
             </Link>
           </li>
           <li>
-            <Link href="https://docs.google.com/document/d/1E39F08BcCfj0g0qMQlrvnkRNU6F38dpjxHfLdaPHC3k/edit?usp=sharing" className="text-[#000] text-[12px]">
+            <Link href="/privacy" className="text-[#000] text-[12px]">
               Privacy Policy
             </Link>
           </li>

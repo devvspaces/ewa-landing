@@ -16,249 +16,429 @@ export default function Home() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 pt-24 md:pt-42">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold mb-8" style={{ color: '#ED8936' }}>
-            EWÀ TERMS OF USE
+            EWÀ TERMS & CONDITIONS
           </h1>
-          
+
           <div className="mb-8">
             <h2 className="text-xl font-bold mb-4" style={{ color: '#ED8936' }}>
               TABLE OF CONTENTS
             </h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li><a href="#information-collection" className="text-orange-700 hover:underline text-sm">Information We Collect About You</a></li>
-              <li><a href="#how-we-use" className="text-orange-700 hover:underline text-sm">How We Use Your Information</a></li>
-              <li><a href="#links-to-websites" className="text-orange-700 hover:underline text-sm">Links to Other Websites</a></li>
-              <li><a href="#information-security" className="text-orange-700 hover:underline text-sm">Information Security</a></li>
-              <li><a href="#data-retention" className="text-orange-700 hover:underline text-sm">Data Retention</a></li>
-              <li><a href="#your-choices" className="text-orange-700 hover:underline text-sm">Your Choices</a></li>
-              <li><a href="#accessing-information" className="text-orange-700 hover:underline text-sm">Accessing, Correcting, or Deleting Your Information</a></li>
-              <li><a href="#geographic-location" className="text-orange-700 hover:underline text-sm">Geographic Location of Data Storage and Processing</a></li>
-              <li><a href="#childrens-information" className="text-orange-700 hover:underline text-sm">Children's Information</a></li>
-              <li><a href="#changes-to-policy" className="text-orange-700 hover:underline text-sm">Changes to This Privacy Policy</a></li>
+              <li><a href="#acceptance-of-these-terms" className="text-orange-700 hover:underline text-sm">Acceptance of These Terms</a></li>
+              <li><a href="#definitions" className="text-orange-700 hover:underline text-sm">Definitions</a></li>
+              <li><a href="#the-companys-role" className="text-orange-700 hover:underline text-sm">The Company's Role</a></li>
+              <li><a href="#eligibility-and-account-registration" className="text-orange-700 hover:underline text-sm">Eligibility and Account Registration</a></li>
+              <li><a href="#electronic-communications-and-sms-messages" className="text-orange-700 hover:underline text-sm">Electronic Communications and SMS Messages</a></li>
+              <li><a href="#bookings-payments-and-fees" className="text-orange-700 hover:underline text-sm">Bookings, Payments, and Fees</a></li>
+              <li><a href="#cancellations-refunds-and-no-shows" className="text-orange-700 hover:underline text-sm">Cancellations, Refunds, and No-Shows</a></li>
+              <li><a href="#service-provider-obligations" className="text-orange-700 hover:underline text-sm">Service Provider Obligations</a></li>
+              <li><a href="#customer-obligations" className="text-orange-700 hover:underline text-sm">Customer Obligations</a></li>
+              <li><a href="#user-content-and-reviews" className="text-orange-700 hover:underline text-sm">User Content and Reviews</a></li>
+              <li><a href="#prohibited-conduct" className="text-orange-700 hover:underline text-sm">Prohibited Conduct</a></li>
+              <li><a href="#safety-and-assumption-of-risk" className="text-orange-700 hover:underline text-sm">Safety and Assumption of Risk</a></li>
+              <li><a href="#intellectual-property" className="text-orange-700 hover:underline text-sm">Intellectual Property</a></li>
+              <li><a href="#third-party-services" className="text-orange-700 hover:underline text-sm">Third-Party Services</a></li>
+              <li><a href="#disclaimer-of-warranties" className="text-orange-700 hover:underline text-sm">Disclaimer of Warranties</a></li>
+              <li><a href="#limitation-of-liability" className="text-orange-700 hover:underline text-sm">Limitation of Liability</a></li>
+              <li><a href="#indemnification" className="text-orange-700 hover:underline text-sm">Indemnification</a></li>
+              <li><a href="#dispute-resolution-and-arbitration" className="text-orange-700 hover:underline text-sm">Dispute Resolution and Arbitration</a></li>
+              <li><a href="#governing-law" className="text-orange-700 hover:underline text-sm">Governing Law</a></li>
+              <li><a href="#termination" className="text-orange-700 hover:underline text-sm">Termination</a></li>
+              <li><a href="#general" className="text-orange-700 hover:underline text-sm">General</a></li>
               <li><a href="#contact-us" className="text-orange-700 hover:underline text-sm">Contact Us</a></li>
             </ul>
           </div>
 
           <div className="space-y-8">
-            <section>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Ewà (hereinafter referred to as "us," "we," "our," or "Company") has created this Privacy Policy to apply to all users of this application and all digital assets contained or offered therein (collectively, our "Services"). This Privacy Policy describes, among other things, the types of information we collect from users when you use our Services, how we use it, and how you can access your information.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                This Privacy Policy is integrated into our Terms & Conditions of Use ("Terms & Conditions").
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                By using the Services and providing us with your personal Information (defined below), you agree to the practices described in this Privacy Policy and Terms & Conditions and to the updates to these policies posted here from time to time.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Our Services connect customers ("Customers") with Service Providers ("Service Providers") (collectively, "Users"). We may therefore share Customer information with Service Providers (and vice versa) to help with this connection, and in accordance with this Privacy Policy. Company does not provide Service Provider services.
-              </p>
-            </section>
-
-            <section id="information-collection">
+            <section id="acceptance-of-these-terms">
               <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
-                INFORMATION WE COLLECT ABOUT YOU
+                1. ACCEPTANCE OF THESE TERMS
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                We may collect the following types of information about you which are described in more detail below: (A) information you provide to us, (B) information we may automatically collect, and (C) information we may receive from third parties. All of the information listed in (A)-(C) above, are detailed below, and hereinafter referred to as "Information."
-              </p>
-
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                Information You Provide to Us
-              </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                In using our Services, you may provide us with Information, including, without limitation, the Information listed below. The Information you provide to us varies based on whether you are a Customer or Service Provider:
-              </p>
-
-              <h4 className="text-lg font-medium mb-2 text-gray-800">If you are a Customer:</h4>
-              <ul className="list-disc pl-6 mb-4 space-y-1">
-                <li>Contact information such as name, email address, and home address;</li>
-                <li>Demographic information such as date of birth and gender;</li>
-                <li>Identification information such as your driver's license (or other government-issued ID) information or social security number;</li>
-                <li>Photo that you may decide to upload;</li>
-                <li>Financial information such as credit card number, name, CVV code, and date of expiration; and</li>
-                <li>Additional information as otherwise described to you at the point of collection or pursuant to your consent.</li>
-              </ul>
-
-              <h4 className="text-lg font-medium mb-2 text-gray-800">If you are a Service Provider:</h4>
-              <ul className="list-disc pl-6 mb-4 space-y-1">
-                <li>Contact information such as name, email address, and home address;</li>
-                <li>Demographic information such as date of birth and gender;</li>
-                <li>Identification information such as your driver's license (or other government-issued ID) information or social security number;</li>
-                <li>Photo that you may decide to upload;</li>
-                <li>Financial information such bank account number and routing number; and</li>
-                <li>Additional information as otherwise described to you at the point of collection or pursuant to your consent.</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                Information We May Automatically Collect About You
-              </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Our Services may automatically collect certain Information about you. This Information is used by Ewà for the operation of the Services, to maintain quality of the Services, and to provide general statistics regarding use of the Services. At this time, we collect only location Information.
-              </p>
-
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                Information We May Receive from Third Parties
-              </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                We may collect additional Information about you from third-party websites, including Google Maps or Apple Maps and/or sources providing publicly available information (e.g., from the U.S. postal service) to help us provide services to you, help prevent fraud, and for marketing and advertising purposes.
+                These Terms & Conditions ("Terms") govern your access to and use of the Ewà mobile application, the ewatheapp.com website, and all related digital assets and services (collectively, the "Services"), operated by Ewà ("Company," "we," "us," or "our").
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                This Privacy Policy only applies to Information collected by our Services. We are not responsible for the privacy and security practices of those other applications or the Information they may collect (which may include IP address). You should contact such third parties directly to determine their respective privacy policies. Links to any other applications or content do not constitute or imply an endorsement or recommendation by us of the linked application and/or content.
+                By downloading, accessing, or using the Services, or by creating an account, you agree to be bound by these Terms and by our Privacy Policy, which is incorporated into these Terms by reference. If you do not agree to these Terms, do not use the Services.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                We may modify these Terms at any time. We will update the Effective Date above when we do. Your continued use of the Services after changes are posted constitutes acceptance of the revised Terms.
               </p>
             </section>
 
-            <section id="how-we-use">
+            <section id="definitions">
               <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
-                HOW WE USE YOUR INFORMATION
-              </h2>
-
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                Use and Purpose of Processing Your Information
-              </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                We use and process your Information for things that may include, but are not limited to, the following:
-              </p>
-              <ul className="list-disc pl-6 mb-4 space-y-1">
-                <li>To provide you with the Services and information you request;</li>
-                <li>To verify your identity;</li>
-                <li>To verify your ability to participate in the Services;</li>
-                <li>To perform background checks;</li>
-                <li>To process your financial transactions made on the Services;</li>
-                <li>To facilitate connections between Service Providers and Customers;</li>
-                <li>To respond to your inquiries and questions and provide customer service;</li>
-                <li>For general or targeted marketing and advertising purposes, including sending you promotional material or special offers on our behalf or on behalf of our marketing partners and/or their respective affiliates and subsidiaries and other third parties, provided that you have not already opted out of receiving such communications;</li>
-                <li>To fulfill contracts we have with you;</li>
-                <li>To manage, improve and foster relationships with third-party vendors, including vendors, suppliers, and parents, affiliates, subsidiaries, and business partners;</li>
-                <li>To maintain, improve, customize, or administer the Services, perform business analyses, or other internal purposes to improve the quality of our business, the Services, resolve technical problems, or improve security or develop other products and services;</li>
-                <li>To comply with our Terms & Conditions;</li>
-                <li>For analytics for business purposes and business intelligence;</li>
-                <li>To comply with any applicable laws and regulations and respond to lawful requests; and/or</li>
-                <li>For any other purposes disclosed to you at the time we collect your Information and/or pursuant to your consent.</li>
-              </ul>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                We may also use Information that has been de-identified and/or aggregated for purposes not otherwise listed above.
-              </p>
-
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                Sharing Your Information
-              </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                We may share your Information as set forth in the Privacy Policy and in the following circumstances:
-              </p>
-              <ul className="list-disc pl-6 mb-4 space-y-2">
-                <li><strong>Third-Party Vendors.</strong> We may share your Information with third-party vendors that perform certain functions or services on our behalf (such as to host the Services, manage databases, perform background checks, process credit card payments, provide customer service, or send communications for us). These third-party vendors are authorized to use your Information only as necessary to provide these services to us. In some instances, we may aggregate Information we collect so third parties do not have access to your identifiable Information to identify you individually.</li>
-                <li><strong>Disclosure to Users.</strong> The Services allow Customers the ability to choose Service Providers. Accordingly, the Services make Customer and Service Provider information (e.g., profiles, portfolios, ratings, and locations) available to any User using the Services to help facilitate bookings. This Policy governs how Ewà uses your Information. We are not responsible for how a User may use your Information.</li>
-                <li><strong>Reviews.</strong> If a Customer leaves a review for a Service Provider, we may post that review and the Customer's username on the Services.</li>
-                <li><strong>Disclosure of Information for Legal and Administrative Reasons.</strong> We may disclose your Information without notice: (i) when required by law or to comply with a court order, subpoena, search warrant, or other legal process; (ii) to cooperate or undertake an internal or external investigation or audit; (iii) to comply with legal, regulatory or administrative requirements of governmental authorities (including, without limitation, requests from the governmental agency authorities to view your Information); (iv) to protect and defend the rights, property, or safety of us, our subsidiaries and affiliates and any of their officers, directors, employees, attorneys, agents, contractors, and partners, and the application Service Users; (v) to enforce or apply our Terms & Conditions; and (vi) to verify the identity of the User of our Services.</li>
-                <li><strong>Business Transfers.</strong> Your Information may be transferred, sold, or otherwise conveyed ("Conveyed") to a third party where we: (i) merge with or are acquired by another business entity; (ii) sell all or substantially all of our assets; (iii) are adjudicated bankrupt; or (iv) are liquidated or otherwise reorganize. You agree to any and all such Conveyances of your Information.</li>
-                <li><strong>De-Identified or Aggregated Data.</strong> We may share your Information on an aggregated basis for any purpose in which your specific personal Information is blinded, masked, or otherwise not identifiable.</li>
-                <li><strong>With Your Consent.</strong> We may share Information consistent with this Privacy Policy with your consent.</li>
-              </ul>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Except as provided in this Privacy Policy, we will not sell, exchange, trade, or disclose your Information we have collected without your consent.
-              </p>
-            </section>
-
-            <section id="links-to-websites">
-              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
-                LINKS TO OTHER WEBSITES
-              </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Our Services may contain links to other applications or services that are not owned or controlled by us, including links to Google Maps and Apple Maps, or may redirect you off our application away from our Services.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                This Privacy Policy only applies to Information collected by our Services. We are not responsible for the privacy and security practices of those other applications or the Information they may collect (which may include IP address). You should contact such third parties directly to determine their respective privacy policies. Links to any other applications or content do not constitute or imply an endorsement or recommendation by us of the linked application and/or content.
-              </p>
-            </section>
-
-            <section id="information-security">
-              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
-                INFORMATION SECURITY
-              </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                We use commercially reasonable measures to provide our Services. However, you should assume that no data transmitted over the Internet or stored or maintained by us or our third-party vendors can be 100% secure. Therefore, we do not promise or guarantee, and you should not expect, that your Information or private communications will always remain private or secure. We do not guarantee that your Information will not be misused by third parties. We are not responsible for the circumvention of any privacy settings or security features. You agree that we will not have any liability for misuse, access, acquisition, deletion, or disclosure of your Information.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                If you believe that your Information has been accessed or acquired by an unauthorized person, you should promptly Contact Us so that necessary measures can quickly be taken.
-              </p>
-            </section>
-
-            <section id="data-retention">
-              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
-                DATA RETENTION
-              </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                We will retain your Information for as long as needed to provide you Services. If you wish to request that we no longer use your Information to provide you Services, please contact us at ewatheapp.com@ewatheapp.com. We will retain and use your Information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements. In accordance with our routine record keeping, we may delete certain records that contain Information you have submitted to us. We are under no obligation to store such Information indefinitely and disclaim any liability arising out of, or related to, the destruction of such Information.
-              </p>
-            </section>
-
-            <section id="your-choices">
-              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
-                YOUR CHOICES
+                2. DEFINITIONS
               </h2>
               <ul className="list-disc pl-6 mb-4 space-y-2">
-                <li><strong>Email.</strong> By using our Services, you agree that we may contact you by email as set forth herein. If you do not want to receive marketing and promotional emails from us, you may click on the "unsubscribe" link in the email to unsubscribe and opt out of marketing email communications or Contact Us.</li>
-                <li><strong>Mobile Push Notifications.</strong> By using our Services, you agree that we may contact you by sending push notifications to your phone. You can use the settings on your mobile device to enable or turn off mobile push notifications from us or Contact Us.</li>
-                <li><strong>Marketing Communications.</strong> If you do not want to receive marketing and promotional emails from us, you may click on the "unsubscribe" link in the email to unsubscribe and opt out of marketing email communications or Contact Us for more information.</li>
-                <li><strong>Opting Out of Direct Marketing by Third Parties.</strong> To exercise choices regarding the marketing information you receive, you may also review the following links:
-                  <ul className="list-disc pl-6 mt-2 space-y-1">
-                    <li>You may opt out of tracking and receiving tailored advertisements on your mobile device by some mobile advertising companies and other similar entities by downloading the App Choices app at www.aboutads.info/appchoices.</li>
-                    <li>You may opt out of receiving permissible targeted advertisements by using the NAI Opt-out tool available at http://optout.networkadvertising.org/?c=1 or visiting About Ads at http://optout.aboutads.info.</li>
-                    <li>You can opt out of having your activity on our Services made available to Google Analytics by installing the Google Analytics opt-out add-on for your web browser by visiting: https://tools.google.com/dlpage/gaoptout for your web browser.</li>
-                  </ul>
-                </li>
+                <li><strong>"Customer"</strong> means a User who books or seeks to book beauty or grooming services through the Services.</li>
+                <li><strong>"Service Provider"</strong> means an independent professional who offers beauty or grooming services to Customers through the Services.</li>
+                <li><strong>"User"</strong> means any person who accesses or uses the Services, including Customers and Service Providers.</li>
+                <li><strong>"Provider Services"</strong> means the beauty, grooming, and related services performed by a Service Provider for a Customer.</li>
               </ul>
             </section>
 
-            <section id="accessing-information">
+            <section id="the-companys-role">
               <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
-                ACCESSING, CORRECTING, OR DELETING YOUR INFORMATION
+                3. THE COMPANY'S ROLE
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                To the extent certain state laws provide users with data subject rights, such as the right to opt out, access, or delete their personal Information, those rights may be honored by the Company following proper authentication and verification. Please see the Contact Us section below for more information.
+                Ewà is a technology platform, not a provider of beauty or grooming services. We provide a marketplace that connects Customers with independent Service Providers. We do not employ Service Providers, do not perform Provider Services, and do not direct, supervise, or control the manner in which Provider Services are performed.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Service Providers are independent contractors. Nothing in these Terms creates an employment, agency, partnership, or joint venture relationship between Ewà and any Service Provider.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Any contract for Provider Services is formed directly between the Customer and the Service Provider. Ewà is not a party to that contract.
               </p>
             </section>
 
-            <section id="geographic-location">
+            <section id="eligibility-and-account-registration">
               <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
-                GEOGRAPHIC LOCATION OF DATA STORAGE AND PROCESSING
+                4. ELIGIBILITY AND ACCOUNT REGISTRATION
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Our Services are targeted to individuals located in the United States. As such, the Services collect Information and process and store that Information in databases located in the United States. If you are visiting the Services from a country outside the United States, you should be aware that you may transfer personally identifiable Information about yourself to the United States, and that the data protection laws of the United States may not be as comprehensive as those in your own country. By visiting the Services and submitting any personally identifiable Information you consent to the transfer of such personally identifiable Information to the United States.
+                You must be at least eighteen (18) years of age and legally capable of entering into binding contracts to create an account or use the Services.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                When you register, you agree to:
+              </p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Provide accurate, current, and complete information;</li>
+                <li>Maintain and promptly update your information;</li>
+                <li>Keep your login credentials confidential;</li>
+                <li>Accept responsibility for all activity that occurs under your account; and</li>
+                <li>Notify us immediately of any unauthorized use of your account.</li>
+              </ul>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                We may refuse, suspend, or terminate any account at our discretion, including where we believe information provided is inaccurate or these Terms have been violated.
               </p>
             </section>
 
-            <section id="childrens-information">
+            <section id="electronic-communications-and-sms-messages">
               <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
-                CHILDREN'S INFORMATION
+                5. ELECTRONIC COMMUNICATIONS AND SMS MESSAGES
               </h2>
+
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                5.1 Consent to Electronic Communications
+              </h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                The Services are intended only for Users over the age of sixteen (16). If we become aware that a User is under thirteen (13) (or a higher age threshold where applicable) and has provided us with Information, we will take steps to comply with any applicable legal requirement to remove such Information. Contact us if you believe that we have mistakenly or unintentionally collected Information from a child under the age of thirteen (13).
+                By creating an account, you consent to receive communications from us electronically, including by email, in-app notification, push notification, and SMS text message. You agree that all agreements, notices, and disclosures provided electronically satisfy any legal requirement that such communications be in writing.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                5.2 SMS Verification Codes
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Account registration takes place within the Ewà mobile application for iOS and Android. During registration, you enter your mobile phone number and must affirmatively check an unchecked consent checkbox reading: "I agree to receive a one-time verification code by SMS from Ewà. Msg & data rates may apply." Registration cannot be completed without checking this box.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                We use your mobile phone number to send one-time verification codes (OTP) and transactional account messages, including booking confirmations and security alerts. We do not send marketing or promotional text messages.
+              </p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Message frequency varies based on your account activity.</li>
+                <li>Message and data rates may apply, and are charged by your mobile carrier.</li>
+                <li>Reply HELP for help, or contact support@ewatheapp.com.</li>
+                <li>Reply STOP to unsubscribe at any time. You will receive one confirmation message and no further texts.</li>
+                <li>Carriers are not liable for delayed or undelivered messages.</li>
+              </ul>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                If you opt out of SMS messages, we may be unable to verify your account or deliver security codes, which may prevent you from signing in to the Services.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.
               </p>
             </section>
 
-            <section id="changes-to-policy">
+            <section id="bookings-payments-and-fees">
               <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
-                CHANGES TO THIS PRIVACY POLICY
+                6. BOOKINGS, PAYMENTS, AND FEES
+              </h2>
+
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                6.1 Booking
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Customers may request Provider Services through the Services. A booking is confirmed when the Service Provider accepts the request. Prices, availability, and service descriptions are set by Service Providers, not by Ewà.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                6.2 Payment
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Customers authorize Ewà, through our third-party payment processor, to charge the payment method on file for the total amount of the booking, including any applicable service fees, taxes, and gratuity.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Payment card details are collected and stored by our PCI-compliant third-party payment processor. Ewà does not store full payment card numbers or security codes on its own systems.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                6.3 Fees
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Ewà charges a service fee for use of the platform. Applicable fees are disclosed before a booking is confirmed. We may change our fees at any time, with changes taking effect for bookings made after the change is posted.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                6.4 Service Provider Payouts
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Ewà remits payment to Service Providers, less applicable fees, according to the payout schedule described in the Services. Service Providers are solely responsible for reporting and paying all taxes arising from their earnings.
+              </p>
+            </section>
+
+            <section id="cancellations-refunds-and-no-shows">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                7. CANCELLATIONS, REFUNDS, AND NO-SHOWS
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                We reserve the right to change, modify or amend this Privacy Policy at any time to reflect changes in our products and service offerings, accommodate new technologies, regulatory requirements, or other purposes. If we modify our Privacy Policy, we will update the "Effective Date" and such changes will be effective upon posting. It is your obligation to check our current Privacy Policy for any changes.
+                Cancellation and refund terms are disclosed at the time of booking and may vary by Service Provider.
+              </p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Customers who cancel outside the applicable cancellation window may receive a refund as described at booking.</li>
+                <li>Customers who cancel within the cancellation window, or who fail to appear, may be charged a cancellation fee.</li>
+                <li>If a Service Provider cancels or fails to appear, the Customer will receive a full refund of amounts charged.</li>
+              </ul>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Refund disputes should be raised through the Services. Ewà may, at its discretion, issue refunds or credits to resolve disputes, but is not obligated to do so.
+              </p>
+            </section>
+
+            <section id="service-provider-obligations">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                8. SERVICE PROVIDER OBLIGATIONS
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                If you use the Services as a Service Provider, you represent and warrant that you:
+              </p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Hold and will maintain all licenses, certifications, registrations, and permits required to lawfully perform your Provider Services in the jurisdictions where you operate;</li>
+                <li>Will comply with all applicable health, safety, sanitation, and licensing laws and regulations;</li>
+                <li>Will maintain any insurance required by law or reasonably appropriate to your Provider Services;</li>
+                <li>Will perform Provider Services in a professional, safe, and competent manner;</li>
+                <li>Consent to identity verification and background screening as a condition of using the Services; and</li>
+                <li>Are solely responsible for your own tools, products, supplies, and equipment.</li>
+              </ul>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                You are solely responsible for the Provider Services you perform and for any injury, damage, or loss arising from them.
+              </p>
+            </section>
+
+            <section id="customer-obligations">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                9. CUSTOMER OBLIGATIONS
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                If you use the Services as a Customer, you agree to:
+              </p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Provide accurate booking details, including location and service requirements;</li>
+                <li>Disclose any allergies, sensitivities, skin conditions, or medical considerations relevant to the Provider Services before they are performed;</li>
+                <li>Provide a safe and lawful environment where Provider Services are performed at your location;</li>
+                <li>Treat Service Providers with respect; and</li>
+                <li>Pay all amounts due for confirmed bookings.</li>
+              </ul>
+            </section>
+
+            <section id="user-content-and-reviews">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                10. USER CONTENT AND REVIEWS
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                You may submit content to the Services, including photographs, profile information, and reviews ("User Content"). You retain ownership of your User Content.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                By submitting User Content, you grant Ewà a worldwide, non-exclusive, royalty-free, transferable, sublicensable license to use, host, store, reproduce, modify, display, and distribute that content in connection with operating and promoting the Services.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                You represent that you own or have the necessary rights to your User Content and that it does not infringe any third-party rights.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Reviews must reflect genuine, first-hand experience. We may remove User Content that violates these Terms, but we do not undertake to review all content and are not responsible for User Content.
+              </p>
+            </section>
+
+            <section id="prohibited-conduct">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                11. PROHIBITED CONDUCT
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                You agree not to:
+              </p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Use the Services for any unlawful purpose or in violation of any applicable law;</li>
+                <li>Arrange payment outside the Services in order to avoid fees;</li>
+                <li>Impersonate any person or misrepresent your identity, qualifications, or affiliation;</li>
+                <li>Harass, threaten, discriminate against, or harm any other User;</li>
+                <li>Request or perform any service of a sexual nature;</li>
+                <li>Post false, misleading, defamatory, or fraudulent content;</li>
+                <li>Scrape, crawl, reverse engineer, or attempt to gain unauthorized access to the Services;</li>
+                <li>Introduce malware or interfere with the operation or security of the Services; or</li>
+                <li>Use the Services to send unsolicited commercial messages.</li>
+              </ul>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Violation may result in immediate suspension or termination of your account and referral to law enforcement.
+              </p>
+            </section>
+
+            <section id="safety-and-assumption-of-risk">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                12. SAFETY AND ASSUMPTION OF RISK
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Ewà performs identity verification and background screening on Service Providers, but we do not guarantee the conduct, skill, qualifications, or safety of any User. Screening has inherent limitations and does not guarantee that a person poses no risk.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                You are responsible for exercising your own judgment when interacting with other Users. You use the Services and receive or perform Provider Services at your own risk.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Beauty and grooming services carry inherent risks, including allergic reaction, skin irritation, chemical burns, and injury. You assume these risks.
+              </p>
+            </section>
+
+            <section id="intellectual-property">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                13. INTELLECTUAL PROPERTY
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                The Services, including all software, text, graphics, logos, and the Ewà name and marks, are owned by Ewà or its licensors and are protected by intellectual property laws. Subject to these Terms, we grant you a limited, revocable, non-exclusive, non-transferable license to use the Services for their intended purpose. All rights not expressly granted are reserved.
+              </p>
+            </section>
+
+            <section id="third-party-services">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                14. THIRD-PARTY SERVICES
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                The Services may integrate or link to third-party services, including mapping, payment processing, and messaging providers. We are not responsible for third-party services, their content, or their practices. Your use of them is governed by their own terms.
+              </p>
+            </section>
+
+            <section id="disclaimer-of-warranties">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                15. DISCLAIMER OF WARRANTIES
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                WE DO NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE, OR THAT ANY PROVIDER SERVICES WILL MEET YOUR EXPECTATIONS.
+              </p>
+            </section>
+
+            <section id="limitation-of-liability">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                16. LIMITATION OF LIABILITY
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                TO THE MAXIMUM EXTENT PERMITTED BY LAW, EWÀ AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, OR GOODWILL, ARISING FROM OR RELATING TO YOUR USE OF THE SERVICES.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                OUR TOTAL AGGREGATE LIABILITY ARISING FROM OR RELATING TO THESE TERMS OR THE SERVICES WILL NOT EXCEED THE GREATER OF (A) THE TOTAL AMOUNTS YOU PAID TO EWÀ IN THE SIX (6) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM, OR (B) ONE HUNDRED U.S. DOLLARS ($100).
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS, SO SOME OF THE ABOVE MAY NOT APPLY TO YOU.
+              </p>
+            </section>
+
+            <section id="indemnification">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                17. INDEMNIFICATION
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                You agree to indemnify, defend, and hold harmless Ewà and its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including reasonable attorneys' fees) arising from or relating to: (i) your use of the Services; (ii) your User Content; (iii) your violation of these Terms or any applicable law; (iv) your Provider Services, if you are a Service Provider; or (v) any dispute between you and another User.
+              </p>
+            </section>
+
+            <section id="dispute-resolution-and-arbitration">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                18. DISPUTE RESOLUTION AND ARBITRATION
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                PLEASE READ THIS SECTION CAREFULLY. IT AFFECTS YOUR LEGAL RIGHTS.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                18.1 Informal Resolution
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Before initiating formal proceedings, you agree to contact us at support@ewatheapp.com and attempt to resolve the dispute informally for at least thirty (30) days.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                18.2 Binding Arbitration
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                If informal resolution fails, any dispute arising from or relating to these Terms or the Services will be resolved by binding individual arbitration administered by the American Arbitration Association under its Consumer Arbitration Rules, rather than in court, except that either party may bring an individual claim in small claims court.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                18.3 Class Action Waiver
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                YOU AND EWÀ AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN AN INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY CLASS OR REPRESENTATIVE PROCEEDING.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                18.4 Opt-Out
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                You may opt out of this arbitration agreement by sending written notice to support@ewatheapp.com within thirty (30) days of first accepting these Terms. Opting out will not affect any other part of these Terms.
+              </p>
+            </section>
+
+            <section id="governing-law">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                19. GOVERNING LAW
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                These Terms are governed by the laws of the State of New York, without regard to its conflict of laws principles. Subject to Section 18, the exclusive venue for any dispute is the state and federal courts located in New York County, New York.
+              </p>
+            </section>
+
+            <section id="termination">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                20. TERMINATION
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                You may terminate your account at any time through the Services or by contacting us. We may suspend or terminate your access at any time, with or without notice, for any reason, including violation of these Terms.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Upon termination, your right to use the Services ceases immediately. Sections 10, 13, 15, 16, 17, 18, and 19 survive termination.
+              </p>
+            </section>
+
+            <section id="general">
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
+                21. GENERAL
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                <strong>Severability.</strong> If any provision is held unenforceable, the remaining provisions remain in full force.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                <strong>No Waiver.</strong> Our failure to enforce any provision is not a waiver of it.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                <strong>Assignment.</strong> You may not assign these Terms without our written consent. We may assign them freely.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                <strong>Entire Agreement.</strong> These Terms and the Privacy Policy constitute the entire agreement between you and Ewà regarding the Services.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                <strong>Force Majeure.</strong> We are not liable for failures caused by events beyond our reasonable control.
               </p>
             </section>
 
             <section id="contact-us">
               <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
-                CONTACT US
+                22. CONTACT US
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                If you have any questions about this Privacy Policy or the Information we have collected about you, please contact us at the following:
+                Questions about these Terms:
               </p>
               <ul className="list-none space-y-2 mb-8">
-                <li><strong>Email us:</strong> admin@ewatheapp.com</li>
+                <li><strong>Email:</strong> support@ewatheapp.com</li>
               </ul>
-              <p className="text-gray-700 leading-relaxed font-medium">
-                <strong>Effective Date:</strong> June 1, 2024
-              </p>
             </section>
           </div>
         </div>

@@ -41,10 +41,10 @@ export function Navbar() {
             <Link href="/support" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
               Support
             </Link>
-            <Link href="https://docs.google.com/document/d/18u1MjiZCMEZpVYhGpPuTnyY1LkmXoTR7ihkaR_OKboc/edit?usp=sharing" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
+            <Link href="/terms" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
               Terms of Use
             </Link>
-            <Link href="https://docs.google.com/document/d/1E39F08BcCfj0g0qMQlrvnkRNU6F38dpjxHfLdaPHC3k/edit?usp=sharing" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
+            <Link href="/privacy" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
               Privacy Policy
             </Link>
           </div>
@@ -93,10 +93,10 @@ export function Navbar() {
               <Link href="/support" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
                 Support
               </Link>
-              <Link href="https://docs.google.com/document/d/18u1MjiZCMEZpVYhGpPuTnyY1LkmXoTR7ihkaR_OKboc/edit?usp=sharing" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
+              <Link href="/terms" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
                 Terms of Use
               </Link>
-              <Link href="https://docs.google.com/document/d/1E39F08BcCfj0g0qMQlrvnkRNU6F38dpjxHfLdaPHC3k/edit?usp=sharing" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
+              <Link href="/privacy" className="text-gray-700 hover:text-gray-900 text-sm font-medium">
                 Privacy Policy
               </Link>
               <div className="flex flex-col gap-2 pt-2">

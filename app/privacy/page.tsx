@@ -71,7 +71,7 @@ export default function Home() {
 
               <h4 className="text-lg font-medium mb-2 text-gray-800">If you are a Customer:</h4>
               <ul className="list-disc pl-6 mb-4 space-y-1">
-                <li>Contact information such as name, email address, and home address;</li>
+                <li>Contact information such as name, email address, mobile phone number, and home address;</li>
                 <li>Demographic information such as date of birth and gender;</li>
                 <li>Identification information such as your driver's license (or other government-issued ID) information or social security number;</li>
                 <li>Photo that you may decide to upload;</li>
@@ -81,7 +81,7 @@ export default function Home() {
 
               <h4 className="text-lg font-medium mb-2 text-gray-800">If you are a Service Provider:</h4>
               <ul className="list-disc pl-6 mb-4 space-y-1">
-                <li>Contact information such as name, email address, and home address;</li>
+                <li>Contact information such as name, email address, mobile phone number, and home address;</li>
                 <li>Demographic information such as date of birth and gender;</li>
                 <li>Identification information such as your driver's license (or other government-issued ID) information or social security number;</li>
                 <li>Photo that you may decide to upload;</li>
@@ -121,12 +121,14 @@ export default function Home() {
               <ul className="list-disc pl-6 mb-4 space-y-1">
                 <li>To provide you with the Services and information you request;</li>
                 <li>To verify your identity;</li>
+                <li>To verify your mobile phone number by sending a one-time verification code (OTP) by SMS text message;</li>
                 <li>To verify your ability to participate in the Services;</li>
                 <li>To perform background checks;</li>
                 <li>To process your financial transactions made on the Services;</li>
                 <li>To facilitate connections between Service Providers and Customers;</li>
                 <li>To respond to your inquiries and questions and provide customer service;</li>
-                <li>For general or targeted marketing and advertising purposes, including sending you promotional material or special offers on our behalf or on behalf of our marketing partners and/or their respective affiliates and subsidiaries and other third parties, provided that you have not already opted out of receiving such communications;</li>
+                <li>To send you transactional and account-related notifications, including booking confirmations and security alerts;</li>
+                <li>For general or targeted marketing and advertising purposes, including sending you promotional material or special offers on our behalf or on behalf of our marketing partners and/or their respective affiliates and subsidiaries and other third parties, provided that you have not already opted out of receiving such communications. Mobile phone numbers and SMS opt-in data are expressly excluded from this provision and are never shared with marketing partners, affiliates, or any third parties;</li>
                 <li>To fulfill contracts we have with you;</li>
                 <li>To manage, improve and foster relationships with third-party vendors, including vendors, suppliers, and parents, affiliates, subsidiaries, and business partners;</li>
                 <li>To maintain, improve, customize, or administer the Services, perform business analyses, or other internal purposes to improve the quality of our business, the Services, resolve technical problems, or improve security or develop other products and services;</li>
@@ -146,6 +148,8 @@ export default function Home() {
                 We may share your Information as set forth in the Privacy Policy and in the following circumstances:
               </p>
               <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li><strong>Mobile Information and SMS Data.</strong> No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</li>
+                <li><strong>Your Mobile Phone Number.</strong> Your mobile phone number is used solely to deliver account verification codes and transactional messages relating to your use of the Services. We share your mobile number only with the licensed telecommunications providers required to deliver those messages to your device, and those providers are contractually prohibited from using it for any other purpose.</li>
                 <li><strong>Third-Party Vendors.</strong> We may share your Information with third-party vendors that perform certain functions or services on our behalf (such as to host the Services, manage databases, perform background checks, process credit card payments, provide customer service, or send communications for us). These third-party vendors are authorized to use your Information only as necessary to provide these services to us. In some instances, we may aggregate Information we collect so third parties do not have access to your identifiable Information to identify you individually.</li>
                 <li><strong>Disclosure to Users.</strong> The Services allow Customers the ability to choose Service Providers. Accordingly, the Services make Customer and Service Provider information (e.g., profiles, portfolios, ratings, and locations) available to any User using the Services to help facilitate bookings. This Policy governs how Ewà uses your Information. We are not responsible for how a User may use your Information.</li>
                 <li><strong>Reviews.</strong> If a Customer leaves a review for a Service Provider, we may post that review and the Customer's username on the Services.</li>
@@ -188,7 +192,7 @@ export default function Home() {
                 DATA RETENTION
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                We will retain your Information for as long as needed to provide you Services. If you wish to request that we no longer use your Information to provide you Services, please contact us at ewatheapp.com@ewatheapp.com. We will retain and use your Information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements. In accordance with our routine record keeping, we may delete certain records that contain Information you have submitted to us. We are under no obligation to store such Information indefinitely and disclaim any liability arising out of, or related to, the destruction of such Information.
+                We will retain your Information for as long as needed to provide you Services. If you wish to request that we no longer use your Information to provide you Services, please contact us at support@ewatheapp.com. We will retain and use your Information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements. In accordance with our routine record keeping, we may delete certain records that contain Information you have submitted to us. We are under no obligation to store such Information indefinitely and disclaim any liability arising out of, or related to, the destruction of such Information.
               </p>
             </section>
 
@@ -196,6 +200,29 @@ export default function Home() {
               <h2 className="text-2xl font-bold mb-4" style={{ color: '#ED8936' }}>
                 YOUR CHOICES
               </h2>
+
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                SMS Text Messages
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                When you create an account with Ewà, we collect your mobile phone number in order to send you a one-time verification code (OTP) by SMS text message.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Account registration takes place within the Ewà mobile application, available for iOS and Android. During registration, you enter your mobile phone number and must affirmatively check an unchecked consent checkbox reading "I agree to receive a one-time verification code by SMS from Ewà. Msg & data rates may apply." You cannot complete registration without checking this box. We do not collect mobile phone numbers through our website.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                These are transactional messages required to verify and secure your account. We do not send marketing or promotional text messages.
+              </p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Message frequency varies based on your account activity.</li>
+                <li>Message and data rates may apply.</li>
+                <li>Reply HELP for help, or contact us at support@ewatheapp.com.</li>
+                <li>Reply STOP to unsubscribe at any time. After replying STOP, you will receive one confirmation message and no further text messages. Please note that if you opt out of SMS messages, we may be unable to verify your account or deliver security codes, which may prevent you from signing in.</li>
+              </ul>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Your mobile phone number and SMS consent data are never shared with third parties or affiliates for marketing or promotional purposes.
+              </p>
+
               <ul className="list-disc pl-6 mb-4 space-y-2">
                 <li><strong>Email.</strong> By using our Services, you agree that we may contact you by email as set forth herein. If you do not want to receive marketing and promotional emails from us, you may click on the "unsubscribe" link in the email to unsubscribe and opt out of marketing email communications or Contact Us.</li>
                 <li><strong>Mobile Push Notifications.</strong> By using our Services, you agree that we may contact you by sending push notifications to your phone. You can use the settings on your mobile device to enable or turn off mobile push notifications from us or Contact Us.</li>
@@ -233,7 +260,7 @@ export default function Home() {
                 CHILDREN'S INFORMATION
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                The Services are intended only for Users over the age of sixteen (16). If we become aware that a User is under thirteen (13) (or a higher age threshold where applicable) and has provided us with Information, we will take steps to comply with any applicable legal requirement to remove such Information. Contact us if you believe that we have mistakenly or unintentionally collected Information from a child under the age of thirteen (13).
+                The Services are intended only for Users over the age of sixteen (16). We do not knowingly collect Information from anyone under the age of sixteen (16). If we become aware that a User is under the age of sixteen (16) and has provided us with Information, we will take steps to delete such Information from our records. Contact us if you believe that we have mistakenly or unintentionally collected Information from a User under the age of sixteen (16).
               </p>
             </section>
 
@@ -254,12 +281,8 @@ export default function Home() {
                 If you have any questions about this Privacy Policy or the Information we have collected about you, please contact us at the following:
               </p>
               <ul className="list-none space-y-2 mb-8">
-                <li><strong>Email us:</strong> admin@ewatheapp.com</li>
+                <li><strong>Email us:</strong> support@ewatheapp.com</li>
               </ul>
-              
-              <p className="text-gray-700 leading-relaxed font-medium">
-                <strong>Effective Date:</strong> June 1, 2024
-              </p>
             </section>
           </div>
         </div>
