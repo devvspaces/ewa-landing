@@ -2,6 +2,6 @@ services:
   web:
     image: ghcr.io/devvspaces/ewa-landing:latest
     restart: always
-    env_file: .env
+    env_file: ../.env
     ports:
       - "127.0.0.1:3001:3000"
