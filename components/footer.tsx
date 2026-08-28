@@ -62,6 +62,11 @@ export function Footer() {
               Privacy Policy
             </Link>
           </li>
+          <li>
+            <Link href="/sms-opt-in" className="text-[#000] text-[12px]">
+              SMS Opt-In
+            </Link>
+          </li>
         </ul>
         <div className="flex justify-center mb-5">
           <div className="flex gap-4 items-center">
