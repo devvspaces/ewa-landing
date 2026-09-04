@@ -6,11 +6,16 @@ import { Suspense } from "react"
 import "./globals.css"
 
 import { Toaster } from "@/components/ui/toaster"
-import { Inter } from 'next/font/google'
+import { Hanken_Grotesk, Fraunces } from 'next/font/google'
 
-const inter = Inter({
+const hanken = Hanken_Grotesk({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-hanken",
+})
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
 })
 
 export const metadata: Metadata = {
@@ -26,15 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${hanken.variable} ${fraunces.variable} font-sans antialiased`}>
         <Suspense fallback={<div>Loading...</div>}>
           {children}
           <Analytics />
