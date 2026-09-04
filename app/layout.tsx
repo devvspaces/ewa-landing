@@ -6,19 +6,21 @@ import { Suspense } from "react"
 import "./globals.css"
 
 import { Toaster } from "@/components/ui/toaster"
-import { Inter, Geist_Mono as V0_Font_Geist_Mono } from 'next/font/google'
+import { Hanken_Grotesk, Fraunces } from 'next/font/google'
 
-// Initialize fonts
-const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100","200","300","400","500","600","700","800","900"] })
-
-const inter = Inter({
+const hanken = Hanken_Grotesk({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-hanken",
+})
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
 })
 
 export const metadata: Metadata = {
-  title: "EWA - Barbing Anytime, Anywhere",
-  description: "Beauty services anywhere and anytime you want",
+  title: "EWÁ — Beauty Professionals Who Come to You",
+  description: "EWÁ connects you with vetted beauty professionals who come to you — no salon, no commute, no wait times.",
   generator: "v0.app",
 }
 
@@ -29,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${hanken.variable} ${fraunces.variable} font-sans antialiased`}>
         <Suspense fallback={<div>Loading...</div>}>
           {children}
           <Analytics />

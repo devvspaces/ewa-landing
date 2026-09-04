@@ -1,121 +1,84 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import {
-  PiInstagramLogoFill,
-  PiTwitterLogoFill,
-  PiLinkedinLogoFill,
-} from "react-icons/pi";
+"use client"
+
+import * as React from "react"
+import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-[#fff] text-white py-6 text-center">
+    <footer className="border-t border-[#EDE5DC] bg-[#FAF8F5] py-12 sm:py-16 text-[#64748B]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Logo and Social */}
-        <div className="mb-5 w-fit mx-auto">
-          <img
-            src="/logo.svg"
-            alt="EWA"
-            width={"150px"}
-            className="mb-6"
-          />
-        </div>
-        <div className="mb-5">
-          <Link
-            target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdwiHqpqI8NGTXO4jhFjqLqAFNNXRHwhIedNDrT6k5jJ0Tdxw/viewform"
-          >
-            <Button className="rounded-full bg-[#061C27] hover:bg-[#061C27] px-14 py-6">
-              Join Wait list
-            </Button>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-[#EDE5DC]/60">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2">
+            <img
+              src="/logo.svg"
+              alt="EWÁ"
+              className="h-7 sm:h-8 w-auto object-contain"
+            />
           </Link>
-        </div>
-        <ul className="mb-5 flex gap-20 justify-center font-medium">
-          <li>
-            <Link href="#" className="text-[#000] text-[12px]">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="mailto:Ewaapp@ewatheapp.com"
-              target="_blank"
-              className="text-[#000] text-[12px]"
+
+          {/* Navigation Links */}
+          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs sm:text-sm font-medium">
+            <a
+              href="/#how-to-book"
+              className="hover:text-[#0A1626] transition-colors"
             >
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link href="#faq" className="text-[#000] text-[12px]">
-              FAQ
-            </Link>
-          </li>
-          <li>
-            <Link href="/terms" className="text-[#000] text-[12px]">
-              Terms of Use
-            </Link>
-          </li>
-          <li>
-            <Link href="/privacy" className="text-[#000] text-[12px]">
-              Privacy Policy
-            </Link>
-          </li>
-          <li>
-            <Link href="/sms-opt-in" className="text-[#000] text-[12px]">
-              SMS Opt-In
-            </Link>
-          </li>
-        </ul>
-        <div className="flex justify-center mb-5">
-          <div className="flex gap-4 items-center">
-            <p className="text-[#142640] text-[12px]">Follow us</p>
-            <Link
-              href="https://www.instagram.com/ewaatheapp"
-              className="text-[#142640]"
-              target="_blank"
+              Book a service
+            </a>
+            <a
+              href="/#for-pros"
+              className="hover:text-[#0A1626] transition-colors"
             >
-              <PiInstagramLogoFill className="w-5 h-5" />
+              For pros
+            </a>
+            <Link
+              href="/support"
+              className="hover:text-[#0A1626] transition-colors"
+            >
+              Support
             </Link>
-          </div>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#0A1626] transition-colors"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://x.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#0A1626] transition-colors"
+            >
+              Twitter
+            </a>
+            <Link
+              href="/terms"
+              className="hover:text-[#0A1626] transition-colors"
+            >
+              Terms
+            </Link>
+            <Link
+              href="/privacy"
+              className="hover:text-[#0A1626] transition-colors"
+            >
+              Privacy
+            </Link>
+            <Link
+              href="/sms-opt-in"
+              className="hover:text-[#0A1626] transition-colors"
+            >
+              SMS Disclosure
+            </Link>
+          </nav>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-[#616161] text-sm text-[12px]">
-              © Copyright {new Date().getFullYear()} EWÀ. All Rights Reserved.
-            </p>
-            <div className="cursor-pointer scale-75" onClick={() => {
-              // Scroll up
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}>
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="16"
-                  cy="16"
-                  r="15.5"
-                  transform="rotate(-90 16 16)"
-                  stroke="black"
-                />
-                <path
-                  d="M8.4707 19.7646L16.0001 13.1764L23.5295 19.7646"
-                  stroke="black"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-          </div>
+        {/* Bottom Copyright */}
+        <div className="pt-8 text-center sm:text-left text-xs text-[#94A3B8]">
+          <p>© 2026 Ewá. All rights reserved. Made in NYC with ♥.</p>
         </div>
       </div>
     </footer>
-  );
+  )
 }
