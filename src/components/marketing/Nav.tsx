@@ -1,22 +1,15 @@
-import { useId } from "react";
 import { Link } from "@tanstack/react-router";
 
 export function Logomark({ size = 26 }: { size?: number }) {
-  const maskId = useId();
   return (
-    <svg
+    <img
+      src="/logo-mark.svg"
       width={size}
       height={size}
-      viewBox="0 0 100 100"
-      className="shrink-0 text-orange"
+      className="shrink-0"
+      alt=""
       aria-hidden="true"
-    >
-      <mask id={maskId}>
-        <circle cx="50" cy="50" r="48" fill="#fff" />
-        <circle cx="57" cy="64" r="18" fill="#000" />
-      </mask>
-      <circle cx="50" cy="50" r="48" fill="currentColor" mask={`url(#${maskId})`} />
-    </svg>
+    />
   );
 }
 
@@ -35,12 +28,11 @@ export function Nav({ variant }: { variant: "landing" | "pros" }) {
     >
       <div className="mx-auto flex h-[68px] max-w-[1080px] items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-[9px]" aria-label="Ewà home">
-          <Logomark />
-          <span
-            className={`font-display text-[22px] font-medium ${dark ? "text-creamy" : "text-midnight"}`}
-          >
-            ewà
-          </span>
+          <img
+            src={dark ? "/logo-creamy.svg" : "/logo.svg"}
+            alt="Ewà"
+            className="h-[28px] w-auto"
+          />
           {dark && (
             <span className="ml-0.5 text-xs font-bold tracking-[.1em] text-orange">BIZ</span>
           )}

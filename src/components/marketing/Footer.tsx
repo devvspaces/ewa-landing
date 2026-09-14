@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import { Logomark } from "./Nav";
 
 export function Footer({ variant }: { variant: "landing" | "pros" }) {
   return (
@@ -11,9 +10,8 @@ export function Footer({ variant }: { variant: "landing" | "pros" }) {
       }
     >
       <div className="mx-auto flex max-w-[1080px] flex-wrap items-center justify-between gap-5 px-6">
-        <Link to="/" className="flex items-center gap-[9px] text-creamy">
-          <Logomark />
-          <span className="font-display text-[22px] font-medium">ewà</span>
+        <Link to="/" className="flex items-center" aria-label="Ewà home">
+          <img src="/logo-creamy.svg" alt="Ewà" className="h-[26px] w-auto" />
         </Link>
         <div className="flex gap-6 text-sm">
           {variant === "landing" ? (
@@ -24,15 +22,23 @@ export function Footer({ variant }: { variant: "landing" | "pros" }) {
               <a href="/#pros" className="hover:text-creamy">
                 For pros
               </a>
-              <a href="#" className="hover:text-creamy">
+              <a
+                href="https://www.instagram.com/ewaatheapp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-creamy"
+              >
                 Instagram
               </a>
-              <a href="#" className="hover:text-creamy">
+              <Link to="/terms" className="hover:text-creamy">
                 Terms
-              </a>
-              <a href="#" className="hover:text-creamy">
+              </Link>
+              <Link to="/privacy" className="hover:text-creamy">
                 Privacy
-              </a>
+              </Link>
+              <Link to="/sms-opt-in" className="hover:text-creamy">
+                SMS Disclosure
+              </Link>
             </>
           ) : (
             <>
@@ -42,15 +48,23 @@ export function Footer({ variant }: { variant: "landing" | "pros" }) {
               <a href="#apply" className="hover:text-creamy">
                 Apply
               </a>
-              <a href="#" className="hover:text-creamy">
+              <a
+                href="https://www.instagram.com/ewaatheapp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-creamy"
+              >
                 Instagram
               </a>
-              <a href="#" className="hover:text-creamy">
+              <Link to="/terms" className="hover:text-creamy">
                 Terms
-              </a>
-              <a href="#" className="hover:text-creamy">
+              </Link>
+              <Link to="/privacy" className="hover:text-creamy">
                 Privacy
-              </a>
+              </Link>
+              <Link to="/sms-opt-in" className="hover:text-creamy">
+                SMS Disclosure
+              </Link>
             </>
           )}
         </div>

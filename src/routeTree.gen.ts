@@ -10,11 +10,19 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ProsRouteImport } from './routes/pros'
+import { Route as SmsOptInRouteImport } from './routes/sms-opt-in'
+import { Route as TermsRouteImport } from './routes/terms'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProsRoute = ProsRouteImport.update({
@@ -22,31 +30,53 @@ const ProsRoute = ProsRouteImport.update({
   path: '/pros',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SmsOptInRoute = SmsOptInRouteImport.update({
+  id: '/sms-opt-in',
+  path: '/sms-opt-in',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/privacy': typeof PrivacyRoute
   '/pros': typeof ProsRoute
+  '/sms-opt-in': typeof SmsOptInRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/privacy': typeof PrivacyRoute
   '/pros': typeof ProsRoute
+  '/sms-opt-in': typeof SmsOptInRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/privacy': typeof PrivacyRoute
   '/pros': typeof ProsRoute
+  '/sms-opt-in': typeof SmsOptInRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/pros'
+  fullPaths: '/' | '/privacy' | '/pros' | '/sms-opt-in' | '/terms'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/pros'
-  id: '__root__' | '/' | '/pros'
+  to: '/' | '/privacy' | '/pros' | '/sms-opt-in' | '/terms'
+  id: '__root__' | '/' | '/privacy' | '/pros' | '/sms-opt-in' | '/terms'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  PrivacyRoute: typeof PrivacyRoute
   ProsRoute: typeof ProsRoute
+  SmsOptInRoute: typeof SmsOptInRoute
+  TermsRoute: typeof TermsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -58,6 +88,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/pros': {
       id: '/pros'
       path: '/pros'
@@ -65,12 +102,29 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sms-opt-in': {
+      id: '/sms-opt-in'
+      path: '/sms-opt-in'
+      fullPath: '/sms-opt-in'
+      preLoaderRoute: typeof SmsOptInRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  PrivacyRoute: PrivacyRoute,
   ProsRoute: ProsRoute,
+  SmsOptInRoute: SmsOptInRoute,
+  TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
