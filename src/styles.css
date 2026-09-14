@@ -1,0 +1,332 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Ewà — design system
+ * Warm editorial palette inspired by Yoruba word "Ewà" (beauty):
+ * cream canvas, deep aubergine ink, terracotta clay, and a whisper of gold.
+ */
+
+@theme inline {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-clay: var(--clay);
+  --color-gold: var(--gold);
+  --color-ink: var(--ink);
+  --color-cream: var(--cream);
+
+  /* Ewà marketing-site brand tokens (from the approved landing/pros mockups) */
+  --color-midnight: var(--midnight-brand);
+  --color-midnight-2: var(--midnight-2-brand);
+  --color-orange: var(--orange-brand);
+  --color-creamy: var(--creamy-brand);
+  --color-paper: var(--paper-brand);
+
+  /* Marketing-site animations (mode tab fade-in, hero underline draw-in) */
+  --animate-fade-up: fadeUp 0.35s ease both;
+  --animate-draw: draw 0.7s 0.4s ease-out both;
+  --animate-pulse-glow: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 44px 6px rgba(255, 130, 63, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 92px 20px rgba(255, 130, 63, 0.55);
+  }
+}
+
+
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes ewaScrollBob {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 6px); }
+}
+
+.ewa-scroll-cue {
+  animation: ewaScrollBob 2s ease-in-out infinite;
+}
+
+/* Connection strip: pro → customer traveler + doorbell ping */
+@keyframes ewaTravelH {
+  0%   { transform: translate(209px, -50%); opacity: 0; }
+  4%   { opacity: 1; }
+  43%  { transform: translate(299px, -50%); opacity: 1; }
+  48%  { transform: translate(299px, -50%); opacity: 1; }
+  84%  { transform: translate(369px, -50%); opacity: 1; }
+  88%  { transform: translate(369px, -50%); opacity: 0; }
+  100% { transform: translate(209px, -50%); opacity: 0; }
+}
+
+@keyframes ewaTravelV {
+  0%   { transform: translate(-50%, 49px); opacity: 0; }
+  4%   { opacity: 1; }
+  43%  { transform: translate(-50%, 108px); opacity: 1; }
+  48%  { transform: translate(-50%, 108px); opacity: 1; }
+  84%  { transform: translate(-50%, 167px); opacity: 1; }
+  88%  { transform: translate(-50%, 167px); opacity: 0; }
+  100% { transform: translate(-50%, 49px); opacity: 0; }
+}
+
+@keyframes ewaDoorbell {
+  0%, 82% { transform: scale(0.7); opacity: 0; }
+  84%     { transform: scale(0.7); opacity: 0.9; }
+  95%     { transform: scale(1.35); opacity: 0; }
+  100%    { transform: scale(1.35); opacity: 0; }
+}
+
+.ewa-traveler-h {
+  animation: ewaTravelH 4.4s linear infinite;
+}
+.ewa-traveler-v {
+  animation: ewaTravelV 4.4s linear infinite;
+}
+.ewa-doorbell {
+  animation: ewaDoorbell 4.4s linear infinite;
+  transform-origin: center;
+}
+
+/* Glowing trail overlays: light up behind traveler, then fade */
+@keyframes ewaTrailH1 {
+  0% { transform: translateY(-50%) scaleX(0); opacity: 0; }
+  4% { transform: translateY(-50%) scaleX(0); opacity: 0.7; }
+  43% { transform: translateY(-50%) scaleX(1); opacity: 0.7; }
+  57% { transform: translateY(-50%) scaleX(1); opacity: 0; }
+  100% { transform: translateY(-50%) scaleX(0); opacity: 0; }
+}
+@keyframes ewaTrailH2 {
+  0%, 47% { transform: translateY(-50%) scaleX(0); opacity: 0; }
+  48% { transform: translateY(-50%) scaleX(0); opacity: 0.7; }
+  84% { transform: translateY(-50%) scaleX(1); opacity: 0.7; }
+  98% { transform: translateY(-50%) scaleX(1); opacity: 0; }
+  100% { transform: translateY(-50%) scaleX(0); opacity: 0; }
+}
+@keyframes ewaTrailV1 {
+  0% { transform: translateX(-50%) scaleY(0); opacity: 0; }
+  4% { transform: translateX(-50%) scaleY(0); opacity: 0.7; }
+  43% { transform: translateX(-50%) scaleY(1); opacity: 0.7; }
+  57% { transform: translateX(-50%) scaleY(1); opacity: 0; }
+  100% { transform: translateX(-50%) scaleY(0); opacity: 0; }
+}
+@keyframes ewaTrailV2 {
+  0%, 47% { transform: translateX(-50%) scaleY(0); opacity: 0; }
+  48% { transform: translateX(-50%) scaleY(0); opacity: 0.7; }
+  84% { transform: translateX(-50%) scaleY(1); opacity: 0.7; }
+  98% { transform: translateX(-50%) scaleY(1); opacity: 0; }
+  100% { transform: translateX(-50%) scaleY(0); opacity: 0; }
+}
+.ewa-trail-h-1 { animation: ewaTrailH1 4.4s ease-in-out infinite; }
+.ewa-trail-h-2 { animation: ewaTrailH2 4.4s ease-in-out infinite; }
+.ewa-trail-v-1 { animation: ewaTrailV1 4.4s ease-in-out infinite; }
+.ewa-trail-v-2 { animation: ewaTrailV2 4.4s ease-in-out infinite; }
+
+/* Door bloom: soft orange bloom when traveler arrives */
+@keyframes ewaDoorBloom {
+  0%, 82% { box-shadow: 0 10px 28px -16px rgba(6,28,39,0.22), 0 0 0 rgba(255,130,63,0); }
+  91% { box-shadow: 0 10px 28px -16px rgba(6,28,39,0.22), 0 0 36px rgba(255,130,63,0.45); }
+  100% { box-shadow: 0 10px 28px -16px rgba(6,28,39,0.22), 0 0 0 rgba(255,130,63,0); }
+}
+.ewa-door-bloom {
+  animation: ewaDoorBloom 4.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ewa-traveler-h {
+    animation: none !important;
+    transform: translate(240px, -50%) !important;
+    opacity: 1 !important;
+  }
+  .ewa-traveler-v {
+    animation: none !important;
+    transform: translate(-50%, 66px) !important;
+    opacity: 1 !important;
+  }
+  .ewa-doorbell {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+  .ewa-trail-h-1, .ewa-trail-h-2, .ewa-trail-v-1, .ewa-trail-v-2 {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+  .ewa-door-bloom {
+    animation: none !important;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Ewà marketing-site brand tokens (exact hex from the approved mockups) */
+  --midnight-brand: #061c27;
+  --midnight-2-brand: #0a2533;
+  --orange-brand: #ff823f;
+  --creamy-brand: #f0ebd8;
+  --paper-brand: #fbf9f2;
+
+  /* Brand tokens */
+  --cream: oklch(0.975 0.014 80);
+  --ink: oklch(0.24 0.045 25);
+  --clay: oklch(0.58 0.15 40);
+  --gold: oklch(0.78 0.13 78);
+
+  --background: oklch(0.975 0.014 80);
+  --foreground: oklch(0.24 0.045 25);
+  --card: oklch(0.99 0.008 80);
+  --card-foreground: oklch(0.24 0.045 25);
+  --popover: oklch(0.99 0.008 80);
+  --popover-foreground: oklch(0.24 0.045 25);
+  --primary: oklch(0.58 0.15 40);
+  --primary-foreground: oklch(0.98 0.01 80);
+  --secondary: oklch(0.93 0.02 70);
+  --secondary-foreground: oklch(0.24 0.045 25);
+  --muted: oklch(0.94 0.015 75);
+  --muted-foreground: oklch(0.48 0.03 30);
+  --accent: oklch(0.78 0.13 78);
+  --accent-foreground: oklch(0.24 0.045 25);
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.98 0.01 80);
+  --border: oklch(0.88 0.02 70);
+  --input: oklch(0.88 0.02 70);
+  --ring: oklch(0.58 0.15 40);
+}
+
+.dark {
+  --background: oklch(0.18 0.03 25);
+  --foreground: oklch(0.97 0.014 80);
+  --card: oklch(0.22 0.035 25);
+  --card-foreground: oklch(0.97 0.014 80);
+  --popover: oklch(0.22 0.035 25);
+  --popover-foreground: oklch(0.97 0.014 80);
+  --primary: oklch(0.72 0.15 45);
+  --primary-foreground: oklch(0.18 0.03 25);
+  --secondary: oklch(0.28 0.04 25);
+  --secondary-foreground: oklch(0.97 0.014 80);
+  --muted: oklch(0.28 0.04 25);
+  --muted-foreground: oklch(0.72 0.02 70);
+  --accent: oklch(0.78 0.13 78);
+  --accent-foreground: oklch(0.18 0.03 25);
+  --destructive: oklch(0.62 0.22 27);
+  --destructive-foreground: oklch(0.97 0.014 80);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.72 0.15 45);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility container-editorial {
+  width: 100%;
+  max-width: 78rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-clay);
+  font-weight: 500;
+}
+
+@utility grain {
+  position: relative;
+}
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(70, 30, 15, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+}
