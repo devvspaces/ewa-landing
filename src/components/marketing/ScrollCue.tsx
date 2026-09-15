@@ -12,9 +12,7 @@ export function ScrollCue({ targetId = "two-ways" }: { targetId?: string }) {
   }, []);
 
   const handleClick = () => {
-    document
-      .getElementById(targetId)
-      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
@@ -29,7 +27,16 @@ export function ScrollCue({ targetId = "two-ways" }: { targetId?: string }) {
         pointerEvents: hidden ? "none" : "auto",
       }}
     >
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="22"
+        height="22"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <polyline points="6 9 12 15 18 9" />
       </svg>
     </button>

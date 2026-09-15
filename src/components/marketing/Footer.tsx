@@ -22,6 +22,9 @@ export function Footer({ variant }: { variant: "landing" | "pros" }) {
               <a href="/#pros" className="hover:text-creamy">
                 For pros
               </a>
+              <Link to="/faq" className="hover:text-creamy">
+                FAQ
+              </Link>
               <a
                 href="https://www.instagram.com/ewaatheapp/"
                 target="_blank"
@@ -48,6 +51,9 @@ export function Footer({ variant }: { variant: "landing" | "pros" }) {
               <a href="#apply" className="hover:text-creamy">
                 Apply
               </a>
+              <Link to="/faq" className="hover:text-creamy">
+                FAQ
+              </Link>
               <a
                 href="https://www.instagram.com/ewaatheapp/"
                 target="_blank"

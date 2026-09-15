@@ -16,18 +16,16 @@ export function MobileStickyCta() {
 
     const observers: IntersectionObserver[] = [];
     if (hero) {
-      const io = new IntersectionObserver(
-        ([entry]) => setHeroVisible(entry.isIntersecting),
-        { threshold: 0.15 },
-      );
+      const io = new IntersectionObserver(([entry]) => setHeroVisible(entry.isIntersecting), {
+        threshold: 0.15,
+      });
       io.observe(hero);
       observers.push(io);
     }
     if (finalCta) {
-      const io = new IntersectionObserver(
-        ([entry]) => setFinalVisible(entry.isIntersecting),
-        { threshold: 0.15 },
-      );
+      const io = new IntersectionObserver(([entry]) => setFinalVisible(entry.isIntersecting), {
+        threshold: 0.15,
+      });
       io.observe(finalCta);
       observers.push(io);
     }

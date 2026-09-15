@@ -87,11 +87,31 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Ewà — Making Beauty Convenient" },
-      { name: "description", content: "Vetted barbers, stylists, braiders and nail techs who come to you — on demand or scheduled. Launching in New York City in 2026." },
-      { property: "og:description", content: "Vetted barbers, stylists, braiders and nail techs who come to you — on demand or scheduled. Launching in New York City in 2026." },
-      { name: "twitter:description", content: "Vetted barbers, stylists, braiders and nail techs who come to you — on demand or scheduled. Launching in New York City in 2026." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/RmMfax4RlJOFYeb5gEaHEoWydl12/social-images/social-1783153057037-Screenshot_2026-04-29_at_2.39.52_AM.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/RmMfax4RlJOFYeb5gEaHEoWydl12/social-images/social-1783153057037-Screenshot_2026-04-29_at_2.39.52_AM.webp" },
+      {
+        name: "description",
+        content:
+          "Vetted barbers, stylists, braiders and nail techs who come to you — on demand or scheduled. Launching in New York City in 2026.",
+      },
+      {
+        property: "og:description",
+        content:
+          "Vetted barbers, stylists, braiders and nail techs who come to you — on demand or scheduled. Launching in New York City in 2026.",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Vetted barbers, stylists, braiders and nail techs who come to you — on demand or scheduled. Launching in New York City in 2026.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/RmMfax4RlJOFYeb5gEaHEoWydl12/social-images/social-1783153057037-Screenshot_2026-04-29_at_2.39.52_AM.webp",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/RmMfax4RlJOFYeb5gEaHEoWydl12/social-images/social-1783153057037-Screenshot_2026-04-29_at_2.39.52_AM.webp",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -109,7 +129,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
-
 
 function RootShell({ children }: { children: ReactNode }) {
   return (

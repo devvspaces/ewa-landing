@@ -217,9 +217,7 @@ export function WaitlistCapture({
           <Logomark size={20} />
           Your ZIP code
         </div>
-        <p className="mb-4 text-sm text-midnight/60">
-          Optional — helps us launch near you first.
-        </p>
+        <p className="mb-4 text-sm text-midnight/60">Optional — helps us launch near you first.</p>
         <input
           type="text"
           id={`${idPrefix}-zip`}
@@ -256,9 +254,7 @@ export function WaitlistCapture({
   const buttonSize = prominent
     ? "h-[58px] min-[861px]:h-[64px] px-8 text-[18px]"
     : "px-[26px] py-3.5 text-[15px]";
-  const buttonGlow = prominent
-    ? "shadow-[0_0_54px_10px_rgba(255,130,63,0.38)]"
-    : "";
+  const buttonGlow = prominent ? "shadow-[0_0_54px_10px_rgba(255,130,63,0.38)]" : "";
   const buttonPulse = prominent && pulseActive ? "animate-pulse-glow" : "";
 
   return (

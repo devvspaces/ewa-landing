@@ -12,7 +12,13 @@ export function FinalCta() {
         <p className="mb-8 text-[17px] text-midnight/60">
           Join the waitlist — as a client, a pro, or both.
         </p>
-        <WaitlistCapture idPrefix="final" thanksMessage="All set. See you in New York." centered prominent pulse={false} />
+        <WaitlistCapture
+          idPrefix="final"
+          thanksMessage="All set. See you in New York."
+          centered
+          prominent
+          pulse={false}
+        />
       </div>
     </section>
   );

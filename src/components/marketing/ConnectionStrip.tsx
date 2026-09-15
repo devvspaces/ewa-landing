@@ -2,13 +2,9 @@
 // Decorative; aria-hidden. Transforms-only animation; static under prefers-reduced-motion.
 import { Logomark } from "./Nav";
 
-
-
 function LaneDashed({ vertical = false, laneIndex }: { vertical?: boolean; laneIndex: 1 | 2 }) {
   const color = "rgba(255,130,63,.5)";
-  const trailCls = vertical
-    ? `ewa-trail-v-${laneIndex}`
-    : `ewa-trail-h-${laneIndex}`;
+  const trailCls = vertical ? `ewa-trail-v-${laneIndex}` : `ewa-trail-h-${laneIndex}`;
   return (
     <div
       aria-hidden

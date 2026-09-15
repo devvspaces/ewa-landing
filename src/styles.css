@@ -59,16 +59,14 @@
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 44px 6px rgba(255, 130, 63, 0.35);
   }
   50% {
     box-shadow: 0 0 92px 20px rgba(255, 130, 63, 0.55);
   }
 }
-
-
-
 
 @keyframes fadeUp {
   from {
@@ -91,8 +89,13 @@
 }
 
 @keyframes ewaScrollBob {
-  0%, 100% { transform: translate(-50%, 0); }
-  50% { transform: translate(-50%, 6px); }
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 6px);
+  }
 }
 
 .ewa-scroll-cue {
@@ -101,30 +104,83 @@
 
 /* Connection strip: pro → customer traveler + doorbell ping */
 @keyframes ewaTravelH {
-  0%   { transform: translate(209px, -50%); opacity: 0; }
-  4%   { opacity: 1; }
-  43%  { transform: translate(299px, -50%); opacity: 1; }
-  48%  { transform: translate(299px, -50%); opacity: 1; }
-  84%  { transform: translate(369px, -50%); opacity: 1; }
-  88%  { transform: translate(369px, -50%); opacity: 0; }
-  100% { transform: translate(209px, -50%); opacity: 0; }
+  0% {
+    transform: translate(209px, -50%);
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  43% {
+    transform: translate(299px, -50%);
+    opacity: 1;
+  }
+  48% {
+    transform: translate(299px, -50%);
+    opacity: 1;
+  }
+  84% {
+    transform: translate(369px, -50%);
+    opacity: 1;
+  }
+  88% {
+    transform: translate(369px, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(209px, -50%);
+    opacity: 0;
+  }
 }
 
 @keyframes ewaTravelV {
-  0%   { transform: translate(-50%, 49px); opacity: 0; }
-  4%   { opacity: 1; }
-  43%  { transform: translate(-50%, 108px); opacity: 1; }
-  48%  { transform: translate(-50%, 108px); opacity: 1; }
-  84%  { transform: translate(-50%, 167px); opacity: 1; }
-  88%  { transform: translate(-50%, 167px); opacity: 0; }
-  100% { transform: translate(-50%, 49px); opacity: 0; }
+  0% {
+    transform: translate(-50%, 49px);
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  43% {
+    transform: translate(-50%, 108px);
+    opacity: 1;
+  }
+  48% {
+    transform: translate(-50%, 108px);
+    opacity: 1;
+  }
+  84% {
+    transform: translate(-50%, 167px);
+    opacity: 1;
+  }
+  88% {
+    transform: translate(-50%, 167px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 49px);
+    opacity: 0;
+  }
 }
 
 @keyframes ewaDoorbell {
-  0%, 82% { transform: scale(0.7); opacity: 0; }
-  84%     { transform: scale(0.7); opacity: 0.9; }
-  95%     { transform: scale(1.35); opacity: 0; }
-  100%    { transform: scale(1.35); opacity: 0; }
+  0%,
+  82% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  84% {
+    transform: scale(0.7);
+    opacity: 0.9;
+  }
+  95% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
 }
 
 .ewa-traveler-h {
@@ -140,43 +196,126 @@
 
 /* Glowing trail overlays: light up behind traveler, then fade */
 @keyframes ewaTrailH1 {
-  0% { transform: translateY(-50%) scaleX(0); opacity: 0; }
-  4% { transform: translateY(-50%) scaleX(0); opacity: 0.7; }
-  43% { transform: translateY(-50%) scaleX(1); opacity: 0.7; }
-  57% { transform: translateY(-50%) scaleX(1); opacity: 0; }
-  100% { transform: translateY(-50%) scaleX(0); opacity: 0; }
+  0% {
+    transform: translateY(-50%) scaleX(0);
+    opacity: 0;
+  }
+  4% {
+    transform: translateY(-50%) scaleX(0);
+    opacity: 0.7;
+  }
+  43% {
+    transform: translateY(-50%) scaleX(1);
+    opacity: 0.7;
+  }
+  57% {
+    transform: translateY(-50%) scaleX(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-50%) scaleX(0);
+    opacity: 0;
+  }
 }
 @keyframes ewaTrailH2 {
-  0%, 47% { transform: translateY(-50%) scaleX(0); opacity: 0; }
-  48% { transform: translateY(-50%) scaleX(0); opacity: 0.7; }
-  84% { transform: translateY(-50%) scaleX(1); opacity: 0.7; }
-  98% { transform: translateY(-50%) scaleX(1); opacity: 0; }
-  100% { transform: translateY(-50%) scaleX(0); opacity: 0; }
+  0%,
+  47% {
+    transform: translateY(-50%) scaleX(0);
+    opacity: 0;
+  }
+  48% {
+    transform: translateY(-50%) scaleX(0);
+    opacity: 0.7;
+  }
+  84% {
+    transform: translateY(-50%) scaleX(1);
+    opacity: 0.7;
+  }
+  98% {
+    transform: translateY(-50%) scaleX(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-50%) scaleX(0);
+    opacity: 0;
+  }
 }
 @keyframes ewaTrailV1 {
-  0% { transform: translateX(-50%) scaleY(0); opacity: 0; }
-  4% { transform: translateX(-50%) scaleY(0); opacity: 0.7; }
-  43% { transform: translateX(-50%) scaleY(1); opacity: 0.7; }
-  57% { transform: translateX(-50%) scaleY(1); opacity: 0; }
-  100% { transform: translateX(-50%) scaleY(0); opacity: 0; }
+  0% {
+    transform: translateX(-50%) scaleY(0);
+    opacity: 0;
+  }
+  4% {
+    transform: translateX(-50%) scaleY(0);
+    opacity: 0.7;
+  }
+  43% {
+    transform: translateX(-50%) scaleY(1);
+    opacity: 0.7;
+  }
+  57% {
+    transform: translateX(-50%) scaleY(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scaleY(0);
+    opacity: 0;
+  }
 }
 @keyframes ewaTrailV2 {
-  0%, 47% { transform: translateX(-50%) scaleY(0); opacity: 0; }
-  48% { transform: translateX(-50%) scaleY(0); opacity: 0.7; }
-  84% { transform: translateX(-50%) scaleY(1); opacity: 0.7; }
-  98% { transform: translateX(-50%) scaleY(1); opacity: 0; }
-  100% { transform: translateX(-50%) scaleY(0); opacity: 0; }
+  0%,
+  47% {
+    transform: translateX(-50%) scaleY(0);
+    opacity: 0;
+  }
+  48% {
+    transform: translateX(-50%) scaleY(0);
+    opacity: 0.7;
+  }
+  84% {
+    transform: translateX(-50%) scaleY(1);
+    opacity: 0.7;
+  }
+  98% {
+    transform: translateX(-50%) scaleY(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scaleY(0);
+    opacity: 0;
+  }
 }
-.ewa-trail-h-1 { animation: ewaTrailH1 4.4s ease-in-out infinite; }
-.ewa-trail-h-2 { animation: ewaTrailH2 4.4s ease-in-out infinite; }
-.ewa-trail-v-1 { animation: ewaTrailV1 4.4s ease-in-out infinite; }
-.ewa-trail-v-2 { animation: ewaTrailV2 4.4s ease-in-out infinite; }
+.ewa-trail-h-1 {
+  animation: ewaTrailH1 4.4s ease-in-out infinite;
+}
+.ewa-trail-h-2 {
+  animation: ewaTrailH2 4.4s ease-in-out infinite;
+}
+.ewa-trail-v-1 {
+  animation: ewaTrailV1 4.4s ease-in-out infinite;
+}
+.ewa-trail-v-2 {
+  animation: ewaTrailV2 4.4s ease-in-out infinite;
+}
 
 /* Door bloom: soft orange bloom when traveler arrives */
 @keyframes ewaDoorBloom {
-  0%, 82% { box-shadow: 0 10px 28px -16px rgba(6,28,39,0.22), 0 0 0 rgba(255,130,63,0); }
-  91% { box-shadow: 0 10px 28px -16px rgba(6,28,39,0.22), 0 0 36px rgba(255,130,63,0.45); }
-  100% { box-shadow: 0 10px 28px -16px rgba(6,28,39,0.22), 0 0 0 rgba(255,130,63,0); }
+  0%,
+  82% {
+    box-shadow:
+      0 10px 28px -16px rgba(6, 28, 39, 0.22),
+      0 0 0 rgba(255, 130, 63, 0);
+  }
+  91% {
+    box-shadow:
+      0 10px 28px -16px rgba(6, 28, 39, 0.22),
+      0 0 36px rgba(255, 130, 63, 0.45);
+  }
+  100% {
+    box-shadow:
+      0 10px 28px -16px rgba(6, 28, 39, 0.22),
+      0 0 0 rgba(255, 130, 63, 0);
+  }
 }
 .ewa-door-bloom {
   animation: ewaDoorBloom 4.4s ease-in-out infinite;
@@ -197,7 +336,10 @@
     animation: none !important;
     opacity: 0 !important;
   }
-  .ewa-trail-h-1, .ewa-trail-h-2, .ewa-trail-v-1, .ewa-trail-v-2 {
+  .ewa-trail-h-1,
+  .ewa-trail-h-2,
+  .ewa-trail-v-1,
+  .ewa-trail-v-2 {
     animation: none !important;
     opacity: 0 !important;
   }
@@ -205,7 +347,6 @@
     animation: none !important;
   }
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   *,
