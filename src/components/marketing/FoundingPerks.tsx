@@ -8,16 +8,11 @@ const perks = [
   },
   {
     n: "02",
-    title: "Founding Pro badge, forever",
-    body: "A permanent mark on your profile that no one after launch can ever get.",
-  },
-  {
-    n: "03",
     title: "Zero Ewà fees on your first 10 bookings",
     body: "Keep everything you earn while you get established on the platform.",
   },
   {
-    n: "04",
+    n: "03",
     title: "A direct line to the team",
     body: "Early access to the app and real input on the features you'll rely on.",
   },
