@@ -21,10 +21,7 @@ const proAppInput = z.object({
 });
 
 function getBackendUrl(): string {
-  const url =
-    process.env.BACKEND_URL ||
-    process.env.VITE_BACKEND_URL ||
-    "http://localhost:3000";
+  const url = process.env.BACKEND_URL || process.env.VITE_BACKEND_URL || "http://localhost:3000";
   return url.replace(/\/$/, "");
 }
 
@@ -70,7 +67,10 @@ export const submitProApplicationFn = createServerFn({ method: "POST" })
 
       if (!response.ok) {
         const errorText = await response.text();
-        console.error(`[pro application] backend responded with error (${response.status}):`, errorText);
+        console.error(
+          `[pro application] backend responded with error (${response.status}):`,
+          errorText,
+        );
         return { ok: true };
       }
 
