@@ -65,29 +65,16 @@ function SmsOptIn() {
                 rates may apply."
               </p>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2">
-              <figure>
-                <img
-                  className="mx-auto block w-full max-w-[340px] rounded-2xl border border-midnight/[.12] bg-white shadow-xs"
-                  src="/images/1.jpeg"
-                  alt="Ewà mobile app registration screen showing the mobile number field with an unchecked SMS consent checkbox directly below it."
-                />
-                <figcaption className="mt-3 text-center text-sm text-midnight/50">
-                  Registration screen showing the mobile number field with an unchecked SMS consent
-                  checkbox.
-                </figcaption>
-              </figure>
-              <figure>
-                <img
-                  className="mx-auto block w-full max-w-[340px] rounded-2xl border border-midnight/[.12] bg-white shadow-xs"
-                  src="/images/2.jpeg"
-                  alt="Ewà mobile app account creation screen with SMS verification opt-in disclosure."
-                />
-                <figcaption className="mt-3 text-center text-sm text-midnight/50">
-                  Account creation view displaying one-time verification code disclosure.
-                </figcaption>
-              </figure>
-            </div>
+            <figure>
+              <img
+                className="mx-auto block w-full max-w-[340px] rounded-2xl border border-midnight/[.12] bg-white shadow-xs"
+                src="/images/1.jpeg"
+                alt="Ewà mobile app registration screen showing the mobile number field with an unchecked SMS consent checkbox directly below it."
+              />
+              <figcaption className="mt-3 text-center text-sm text-midnight/50">
+                Ewà app registration screen, showing the unchecked consent checkbox.
+              </figcaption>
+            </figure>
           </Section>
 
           <Section id="sample-message" title="Sample Message">
