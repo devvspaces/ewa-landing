@@ -1,6 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, useMemo } from "react";
-import { Search, X, HelpCircle, Sparkles, ShieldCheck, CreditCard, Calendar, Briefcase, Mail } from "lucide-react";
+import {
+  Search,
+  X,
+  HelpCircle,
+  Sparkles,
+  ShieldCheck,
+  CreditCard,
+  Calendar,
+  Briefcase,
+  Mail,
+} from "lucide-react";
 import { Nav } from "../components/marketing/Nav";
 import { Footer } from "../components/marketing/Footer";
 import {
@@ -188,8 +198,7 @@ const FAQ_DATA: FAQItem[] = [
     category: "money",
     audience: "all",
     question: "How do tips work?",
-    answer:
-      "100% of tips go directly to the professional. EWÁ takes 0% commission from tips.",
+    answer: "100% of tips go directly to the professional. EWÁ takes 0% commission from tips.",
   },
   {
     id: "taxes",
@@ -247,7 +256,8 @@ const FAQ_DATA: FAQItem[] = [
         >
           support@ewatheapp.com
         </a>
-        . Provide details on what occurred and what resolution you are seeking. We investigate and resolve every report individually.
+        . Provide details on what occurred and what resolution you are seeking. We investigate and
+        resolve every report individually.
       </span>
     ),
   },
@@ -481,11 +491,7 @@ function FAQPage() {
                     <div className="rounded-2xl border border-midnight/[.08] bg-white px-6 shadow-xs">
                       <Accordion type="multiple" className="w-full divide-y divide-midnight/[.06]">
                         {group.items.map((item) => (
-                          <AccordionItem
-                            key={item.id}
-                            value={item.id}
-                            className="border-b-0 py-1"
-                          >
+                          <AccordionItem key={item.id} value={item.id} className="border-b-0 py-1">
                             <AccordionTrigger className="py-4 text-left text-base font-medium text-midnight hover:no-underline hover:text-orange">
                               <span className="pr-4">{item.question}</span>
                             </AccordionTrigger>
@@ -547,4 +553,3 @@ function FAQPage() {
     </div>
   );
 }
-
