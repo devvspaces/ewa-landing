@@ -9,11 +9,11 @@ export function Footer({ variant }: { variant: "landing" | "pros" }) {
           : "mt-5 bg-midnight py-10 text-creamy/65"
       }
     >
-      <div className="mx-auto flex max-w-[1080px] flex-wrap items-center justify-between gap-5 px-6">
+      <div className="mx-auto flex max-w-[1080px] flex-col items-start gap-6 px-6 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
         <Link to="/" className="flex items-center" aria-label="Ewà home">
           <img src="/logo-creamy.svg" alt="Ewà" className="h-[26px] w-auto" />
         </Link>
-        <div className="flex gap-6 text-sm">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
           {variant === "landing" ? (
             <>
               <a href="/#how" className="hover:text-creamy">
